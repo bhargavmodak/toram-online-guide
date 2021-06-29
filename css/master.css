@@ -41,8 +41,8 @@ h4 {
 h5 {
   font-family: 'Montserrat', cursive;
   margin: 1rem;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 p {
@@ -178,10 +178,58 @@ li {
 }
 
 .Small-div-links {
-  width: 15rem;
-  background-color: #BE0000;
+  display: inline-block;
+  margin: 1rem;
+  border-radius: 2rem;
+  padding: 1.5rem;
+}
+
+/***** FOR LEVELS child divs *******/
+.level-div{
+  background-color: #CDF0EA;
+  margin: 1rem 0 0 2rem;
+  border-radius: 1rem;
+  display: block;
+  padding: 2rem;
+}
+
+.small-level-div{
+
+  background-color: #F6C6EA;
   display: inline-block;
   margin: 1rem;
   border-radius: 2rem;
   padding: 2rem;
+}
+  /************ Footer ********/
+
+ .footer-link{
+    color: #126e82;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+
+  .footer-link:hover{
+    color: white;
+  }
+
+  .copyright{
+    color: #393E46;
+    margin-left: 1rem;
+  }
+
+.coryn-child {
+  background-color: #BD2000;
+}
+
+.coryn-links {
+  color: #EEEEEE;
+}
+
+.coryn-links:hover {
+  color: white;
+}
+
+.Tome-of-Offense {
+  background-color: #EBA83A;
 }
