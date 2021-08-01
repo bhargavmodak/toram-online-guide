@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/master.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script&family=Montserrat:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -20,6 +21,24 @@
 -->
 
 <body>
+
+  <!--<div class="navbar">
+    <nav>
+      <li>The Basic Things</li>
+      <li>The Tutorial</li>
+      <li>Chat</li>
+      <li>Characters</li>
+      <li>Ease of Playing</li>
+      <li>Shortcuts</li>
+      <li>Inventory</li>
+      <li>Stats</li>
+      <li>Levels</li>
+      <li>Skills</li>
+      <li>Trading and Economy</li>
+      <li>Orbs</li>
+    </nav>
+  </div>-->
+
   <div class="title-card">
     <h1> Toram Online </h1>
     <h2>Read this if you're new...</h2>
@@ -35,6 +54,7 @@
       begin, but any time is good too. </p>
   </div>
 
+  <!--The Basic Things-->
   <div class="cards greens">
     <h3>The Basic Things</h3>
     <div class="content">
@@ -48,6 +68,7 @@
     </div>
   </div>
 
+  <!--The Tutorial-->
   <div class="cards whites">
     <h3>The Tutorial</h3>
     <div class="content" id="two">
@@ -72,6 +93,7 @@
     </div>
   </div>
 
+  <!--Chat-->
   <div class="cards blues">
     <h3>Chat</h3>
     <div class="content">
@@ -92,13 +114,15 @@
     </div>
   </div>
 
+  <!--Forums message-->
   <div class="cards whites">
     <h3>Have you joined the Unofficial Toram Online Forums?</h3>
-    <div class="content">
+    <div class="content" style="text-align:center;">
       <a href="https://toramonline.com/index.php" class="Forum-button">If not, check it out here!</a>
     </div>
   </div>
 
+  <!--Characters-->
   <div class="cards greens">
     <h3>Characters</h3>
     <div class="content">
@@ -112,6 +136,7 @@
     </div>
   </div>
 
+  <!--Ease of Playing-->
   <div class="cards whites">
     <h3>Ease of Playing</h3>
     <div class="content">
@@ -129,6 +154,7 @@
     </div>
   </div>
 
+  <!--Shortcuts-->
   <div class="cards blues">
     <h3>Shortcuts</h3>
     <div class="content">
@@ -144,14 +170,16 @@
     </div>
   </div>
 
-  <div class="cards whites">
+  <!--Reddit prompt messsage-->
+  <div id ="Reddit-Prompt" class="cards whites">
     <img src="https://www.vectorico.com/download/social_media/Reddit-Icon.png" alt="Reddit" style="height:4rem; width:4rem;display:inline;">
     <h3 style="width: auto; height: auto; margin: 1rem 1rem 0 1rem; display: inline-block; position: relative;  top: 50%;transform: translateY(-30%);">
       Join <a href="https://www.reddit.com/r/ToramOnline/">r/ToramOnline</a>! 👈
     </h3>
   </div>
 
-  <div class="cards greens">
+  <!--Inventory-->
+  <div id="Inventory" class="cards greens">
     <h3>Inventory</h3>
     <div class="content">
       <ul class="lists">
@@ -171,12 +199,14 @@
     </div>
   </div>
 
+  <!--Stats-->
   <div class="cards whites">
     <h3>Stats</h3>
     <div class="content">
       <p class="shifted-p">Early game, monsters are fairly easy, so it is recommended to add all stat points to boost ATK/MATK. For now, you don't have to worry about VIT stat. Defense, MaxHp, and MaxMP can be gained from equipments.
         <br> <br> <strong>HIT and FLEE are useless,</strong> as of given date above. The game is very unbalanced with respect to those. Monsters have unreasonably high HIT and FLEE compared to players. Don't try to increase these.
       </p>
+      <!--Accuracy question-->
       <div class="othersite" style=" color: black; border-color : #39A6A3; border-width :medium; border-style : dashed; border radius: 2rem;">
         'But how can I not miss if I don't increase Accuracy?'
         <br>
@@ -186,33 +216,46 @@
         </ul>
       </div>
 
+      <!--Coryn Club-->
       <div class="othersite coryn-club">
         <h4>Coryn Club!</h4>
         <p class="shifted-p">This site is the go to site for most of Toram Online Players for data.
           There is a lot of info, but it is not an exhaustive list.
-          The below text is active, click the ones you are interested in.</p>
+          The below text is active, <u>click the ones</u> you are interested in.</p>
 
+        <!--Coryn Maths-->
         <div class="Small-div-links coryn-child">
+          <a class="coryn-links" href="http://coryn.club/guide.php?key=status"><span class="div-links"></span></a>
           <h5 style="color : #FAEEE7;">The Mathz behind the statz!</h5>
           <p class="shifted-p">
-            <a class="coryn-links" href="http://coryn.club/guide.php?key=status">Use the sidebar in this website to navigate!!</a>
+            Use the sidebar in this website to navigate!!
           </p>
         </div>
+
+        <!--Coryn Items-->
         <div class="Small-div-links coryn-child">
+          <a class="coryn-links" href="http://coryn.club/index.php"><span class="div-links"></span></a>
           <h5 style="color : #FAEEE7;">What gear gives you what?</h5>
           <p class="shifted-p">
-            <a class="coryn-links" href="http://coryn.club/index.php">On this site, scroll down the sidebar and use the feature called advanced search to find out what equipment give what. Like, what gives MaxMP, etc. Please don't make a post just to
-              ask how to increase MaxMP or something. You are playing an MMORPG! You should learn those things by searching for yourself.</a>
+            On this site, scroll down the sidebar and use the feature called advanced search to find out what equipment give what. Like, what gives MaxMP, etc. Please don't make a post just to
+              ask how to increase MaxMP or something. You are playing an MMORPG! You should learn those things by searching for yourself.
           </p>
         </div>
       </div>
-      <div class="othersite Tome-of-Offense" style="margin: 2rem 0 0 2rem ;">
-        <h4 style="color: #BB371A;">The Tome of Offense</h4>
-        <p class="shifted-p"><a href="https://toramonline.com/index.php?threads/thexiiithguys-tome-of-offense.50196/" style="color:#FFF8D9;">The XIIIth Guy was a user on Toram Online Forums Years ago. <br> He and Mayan compiled a tome of offense and a tome of defense, the former of which is given here. <br> Hail the Holy Tome!!</a></p>
-      </div>
+
+    <!--Tome of Offense-->
+    <div class="othersite Tome-of-Offense">
+      <a href="https://toramonline.com/index.php?threads/thexiiithguys-tome-of-offense.50196/"><span class="div-links"></span></a>
+      <h4 style="color: #BB371A;">The Tome of Offense</h4>
+      <p class="shifted-p">
+       The XIIIth Guy was a user on Toram Online Forums Years ago.
+       <br> He and Mayan compiled a tome of offense and a tome of defense, the former of which is given here. <br> Hail the Holy Tome!!</p>
     </div>
+    </div>
+
   </div>
 
+  <!--Levels-->
   <div class="cards blues">
       <h3>Levels</h3>
       <div class="content">
@@ -232,7 +275,7 @@
 
            <div class="level-div">
              <h4>Do you Want to level up to 150 fast?</h4>
-             <p class="shifted-p">If you are a newbiethe fastest way to get to level 150 is to play story up to chapter 9 complete. You'll be at level 150 at the end of it. People will tell you to do chapter 10 too.
+             <p class="shifted-p">If you are a newbie, the fastest way to get to level 150 is to play story up to chapter 9 complete. You'll be at level 150 at the end of it. People will tell you to do the next chapters too.
               No need to do that, level 150 is enough. Save it up for future when you need exp to reach a benchmark level like 205 or 200.</p>
 
              <div class="small-level-div" >
@@ -250,53 +293,89 @@
       </div>
     </div>
 
-    <div class="cards whites">
-      <h3>Skills:</h3>
-      <div class="content">
-        <ul class="lists">
-          <li>Toram has a classless system meaning you can get skills from any skill tree.
-             The weapon you choose in Tutorial only determines which skill page you unlock first. </li>
-          <li>To upgrade skills you need to get skill pages. Those can be bought at the Sofya City library. Some pages are in books that you can't find in the library. Those books have special skills.
-            Those can be purchased from other players or be won as prizes from treasure chests. (Complete chapter 2 lesson 1 to understand what those are.)'</li>
-          <li>Skill pages are divide into tiers. Tier 0 to 4.
-            <ul>
-              <li><strong>Most (NOT ALL)</strong> main weapon skill pages from tier 0 and 1 are unlocked at level 0</li>
-              <li>Tier 2 pages unlock at level 30</li>
-              <li>Tier 3 pages unlock at level 70</li>
-              <li>Tier 4 pages unlock at level 150</li>
-            </ul>
-          </li>
-          <li>Those levels are the levels of your highest leveled character. If you have a level 120 character and a level 40 character, then even the level 40 character can use tier 3 skills.
-            If you then delete the level 120 character, then whatever pages you had purchased for the level 40 character remain. But you cannot get new pages. </li>
-          <li>Tier 4 skills are the strongest and help you level your other characters faster and also farm faster. Hence everyone keeps telling you to do story up to chapter 9 and to get to level 150.
-            If you want, you can enjoy the game at your own pace (It helps you learn combat skills and mechanics. I recommend it) But you won't find many people around your level because, Toram is an old game. People are already high level. </li>
-        </ul>
-      </div>
+  <!--Skills-->
+  <div class="cards whites">
+    <h3>Skills:</h3>
+    <div class="content">
+      <ul class="lists">
+        <li>Toram has a classless system meaning you can get skills from any skill tree.
+           The weapon you choose in Tutorial only determines which skill page you unlock first. </li>
+        <li>To upgrade skills you need to get skill pages. Those can be bought at the Sofya City library. Some pages are in books that you can't find in the library. Those books have special skills.
+          Those can be purchased from other players or be won as prizes from treasure chests. (Complete chapter 2 lesson 1 to understand what those are.)'</li>
+        <li>Skill pages are divide into tiers. Tier 0 to 4.
+          <ul>
+            <li><strong>Most (NOT ALL)</strong> main weapon skill pages from tier 0 and 1 are unlocked at level 0</li>
+            <li>Tier 2 pages unlock at level 30</li>
+            <li>Tier 3 pages unlock at level 70</li>
+            <li>Tier 4 pages unlock at level 150</li>
+          </ul>
+        </li>
+        <li>Those levels are the levels of your highest leveled character. If you have a level 120 character and a level 40 character, then even the level 40 character can use tier 3 skills.
+          If you then delete the level 120 character, then whatever pages you had purchased for the level 40 character remain. But you cannot get new pages. </li>
+        <li>Tier 4 skills are the strongest and help you level your other characters faster and also farm faster. Hence everyone keeps telling you to do story up to chapter 9 and to get to level 150.
+          If you want, you can enjoy the game at your own pace (It helps you learn combat skills and mechanics. I recommend it) But you won't find many people around your level because, Toram is an old game. People are already high level. </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Trading and Economy-->
+  <div class="cards greens">
+    <h3>Trading and Economy:</h3>
+    <div class="content">
+      <ul class="lists">
+      <li>You can trade with other people by tapping on them and clicking trading.
+         You don't need to actually give them anything in trade, or even coins, though. You need to be able to see them though.
+          <ul>
+            <li>As always, more options show up on list when you tap the top arrow. </li>
+          </ul>
+      </li>
+      <li>You can gift a friend, party member or a guild member from long distance. This is however only one item at a time. You can also mail them over long distances, so they can see it when they come back online.</li>
+      <li>Sofya City, El Scaro and Hora Diomedea have Trading boards called consignment boards. You can register your item there, and people will search for your item and buy it. However, the government taxes you. You can even do cross - server in this method, but then there's an ADDITIONAL tax.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Orbs-->
+  <div class="cards whites">
+    <h3>Orbs</h3>
+    <div class="content">
+      <ul class="lists">
+        <li>Orbs are the premium currency of Toram Online.</li>
+        <li>If you want to spend money on this game, you can spend your orbs however you want to.
+        Toram is not P2W anyway. There is nothing to 'win' either. </li>
+        <li>If you are an <strong>F2P player</strong>:</li>
+      </ul>
     </div>
 
-    <div class="cards greens">
-      <h3>Trading and Economy:</h3>
-      <div class="content">
-        <ul class="lists">
-          <li>You can trade with other people by tapping on them and clicking trading.
-           You don't need to actually give them anything in trade, or even coins, though. You need to be able to see them though.
-            <ul>
-              <li>As always, more options show up on list when you tap the top arrow. </li>
-            </ul>
-         </li>
-        <li>You can gift a friend, party member or a guild member from long distance. This is however only one item at a time. You can also mail them over long distances, so they can see it when they come back online.</li>
-        <li>Sofya City, El Scaro and Hora Diomedea have Trading boards called consignment boards. You can register your item there, and people will search for your item and buy it. However, the government taxes you. You can even do cross - server in this method, but then there's an ADDITIONAL tax.</li>
+    <!--Do not-->
+    <div class="Small-div-links Do-n-dont">
+      <h4>DO NOT <br> spend your orbs on:</h4>
+        <ul type="circle">
+          <li>Item chests</li>
+          <li>Avatar chests</li>
+          <li>EXP or Drop rate Books</li>
+          <li>Revival droplets</li>
+          <li>Teleport tickets</li>
+          <li>Gem lottery</li>
         </ul>
-      </div>
     </div>
 
-    <div class="bottom-container">
-        <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/bhargav-modak-a837b7210/">LinkedIn</a>
-        <a class="footer-link" target="_blank" href="https://www.reddit.com/user/TheBrahmnicBoy">Reddit</a>
-        <a class="footer-link" target="_blank" href="https://github.com/TheBrahmnicBoy">GitHub</a>
-        <a class="footer-link" target="_blank" href="https://twitter.com/thebrahmnicboy">Twitter</a>
-        <p class="copyright">© 2021 Bhargav Modak.</p>
-      </div>
+    <!--Do-->
+    <div class="Small-div-links Do-n-dont">
+      <h4>DO <br> spend your orbs on: <br> </h4>
+        <ul type="circle">
+          <li>More storage space in the NPC store.
+             Refer <a href="#Inventory">▶Inventory◀</a> for more info.</li>
+          <li>More Character Slots. <br>「Menu」➡「Character」➡「Switch Character」➡「Buy Character Slot」. </li>
+          <li>Rare deals like Guaranteed piercer/Ultimate/Glory Gem.</li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="cards Spina-link">
+      <h3>You want to earn a lot of spina!</h3>
+      <h4><a href="spina.html">Then click here ~</a></h4>
+  </div>
 
 <!--
   <div class="cards">
@@ -307,6 +386,15 @@
     </div>
   </div>
 -->
+
+  <div class="bottom-container">
+      <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/bhargav-modak-a837b7210/">LinkedIn</a>
+      <a class="footer-link" target="_blank" href="https://www.reddit.com/user/TheBrahmnicBoy">Reddit</a>
+      <a class="footer-link" target="_blank" href="https://github.com/TheBrahmnicBoy">GitHub</a>
+      <a class="footer-link" target="_blank" href="https://twitter.com/thebrahmnicboy">Twitter</a>
+      <div style="display:inline-block; width:37%"> </div>
+      <p class="copyright" style="font-size:1rem;">Made by TheBrahmnicBoy.</p>
+    </div>
 </body>
 
 </html>

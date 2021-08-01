@@ -1,8 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: #EEEEEE;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 
 /* FONTS USED
@@ -35,7 +39,7 @@ h3 {
 h4 {
   font-family: 'Montserrat', cursive;
   margin: 1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h5 {
@@ -194,17 +198,25 @@ li {
 }
 
 .small-level-div{
-
   background-color: #F6C6EA;
   display: inline-block;
   margin: 1rem;
   border-radius: 2rem;
   padding: 2rem;
 }
-  /************ Footer ********/
+
+/************ Footer ********/
+
+.bottom-container {
+  background-color: #393E46;
+  border-top-style: solid;
+  border-top-color: black;
+  border-top-width: thin;
+  padding: 1rem 0 1rem 1rem;
+}
 
  .footer-link{
-    color: #126e82;
+    color: #686D76;
     text-decoration: none;
     margin: 0 20px;
   }
@@ -214,22 +226,39 @@ li {
   }
 
   .copyright{
-    color: #393E46;
-    margin-left: 1rem;
+    color: #D1D9D9;
+    margin: 0;
   }
 
 .coryn-child {
   background-color: #BD2000;
-}
-
-.coryn-links {
-  color: #EEEEEE;
-}
-
-.coryn-links:hover {
-  color: white;
+  position: relative;
+  box-shadow: 3px 3px 0 #630000;
 }
 
 .Tome-of-Offense {
   background-color: #EBA83A;
+  position: relative;
+  box-shadow: 3px 3px 0 #9C6F25;
+}
+
+.Spina-link{
+  background-color: #897853;
+  position: relative;
+  color: #4E3620;
+}
+
+.Do-n-dont{
+  background-color: #AAD8D3;
+  display:inline-block;
+  width: 40%;
+}
+
+.div-links {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
 }
