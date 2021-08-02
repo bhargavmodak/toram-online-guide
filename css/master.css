@@ -201,6 +201,8 @@ li {
 .small-level-div{
   background-color: #F6C6EA;
   display: inline-block;
+  border-style: solid;
+  border-width: thin;
   margin: 1rem;
   border-radius: 2rem;
   padding: 2rem;
@@ -243,12 +245,19 @@ li {
   background-color: #EBA83A;
   position: relative;
   box-shadow: 3px 3px 0 #9C6F25;
+  color: #362222;
 }
 
 .Spina-link{
   background-color: #897853;
   position: relative;
   color: #4E3620;
+}
+
+.Spina-link a:hover {
+  color: white;
+  transition-timing-function: ease-in;
+  transition-duration: 0.25s;
 }
 
 .Do-n-dont{
@@ -264,4 +273,19 @@ li {
   top:0;
   left: 0;
   z-index: 1;
+}
+
+.Reddit-icon {
+  height: 4rem;
+  width: 4rem;
+  display:inline-block;
+}
+
+.Reddit-prompt {
+  width: auto;
+  height: auto;
+  margin: 1rem 1rem 0 1rem;
+  display: inline-block;
+  position: relative;
+  top: 50%;transform: translateY(-30%);
 }

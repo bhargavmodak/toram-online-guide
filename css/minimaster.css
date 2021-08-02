@@ -1,26 +1,296 @@
-/*@media only screen and (max-width: 970px) {
-  .Do-n-dont{
-    background-color: #AAD8D3;
-    display:block;
-    width: 80%;
+@media only screen and (max-width: 970px) {
+  html {
+    scroll-behavior: smooth;
   }
+
+  body {
+    margin: 0;
+    background-color: #EEEEEE;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+  }
+
+  /* FONTS USED
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  */
+
+  /*General Elements*/
+  h1 {
+    color: #76EAD7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  h2 {
+    color: #EEEEEE;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
   h3 {
     font-family: 'Comfortaa', cursive;
     margin: 1rem;
     font-size: 2rem;
   }
 
+  h4 {
+    font-family: 'Montserrat', cursive;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-family: 'Montserrat', cursive;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  p {
+   font-size: 1rem;
+   display: inline-block;
+    line-height: 1.5rem;
+  }
+
+  .shifted-p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  /*anchor*/
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #7952B3;
+      font-weight: bold;
+    }
+  /*anchor -end*/
+
+  ul {
+    list-style-position: outside;
+  }
+
+  li {
+    padding: 5px;
+  }
+  /*General Elements -end*/
+
+  /*Site flow start*/
+
+  /*FUTURE
+  .intro-img-container {
+    width:100vw;
+    height:auto;
+  }
+
+  .intro-img {
+    width: 100%;
+    padding: 0;
+    height:auto;
+  }
+  */
+
   .title-card {
     background-color: #393E46;
-    padding: 2rem 2rem 5rem 2rem;
+    padding: 2rem 2rem 3rem 2rem;
+  }
+
+  .punchy {
+    color: #686D76;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 0.7rem;
+    position: absolute;
+    right: 10%;
+  }
+
+  .Introduction {
+    text-align: left;
+    margin: 2rem auto 2rem 2rem;
+    width: 80%;
   }
 
   .cards {
-    padding: 2rem 1rem 2rem 2rem;
+    padding: 2rem 0 2rem 1rem;
   }
   .content {
     width: 90%;
   }
 
+  /*Specific divs*/
 
-}*/
+  .greens {
+      background-color: #C4FB6D;
+  }
+
+  .blues {
+      background-color: #76EAD7;
+  }
+
+  .whites {
+      background-color: #EEEEEE;
+  }
+
+  /**FORUM BUTTON**/
+  .Forum-button {
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     border-radius: 20px;
+     color: #76EAD7;
+     font-size: 1.3em;
+     font-weight: 100;
+     padding: 1em;
+     background-color: #393E46;
+     text-decoration: none;
+     display: inline-block;
+     cursor: pointer;
+     text-align: center;
+  }
+
+  .Forum-button:hover {
+     background-color: #393E46;
+     color: #76EAD7;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     border-radius: 20px;
+     text-decoration: none;
+  }
+  /**FORUM BUTTON**/
+
+  .othersite {
+    color: #EEEEEE;
+    margin: 1rem 0 0 1rem;
+    border-radius: 1rem;
+    display: block;
+    padding: 1rem;
+  }
+
+  .coryn-club {
+    background-color: #006990;
+  }
+
+  .Small-div-links {
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
+  }
+
+  /***** FOR LEVELS child divs *******/
+  .level-div{
+    background-color: #CDF0EA;
+    margin: 0 0 0 1rem;
+    border-radius: 1rem;
+    display: block;
+    padding: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .small-level-div{
+    background-color: #F6C6EA;
+    display: inline-block;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 2rem;
+    width: 70%;
+    margin: 1rem 1rem 1rem 0.5rem;
+  }
+
+  /************ Footer ********/
+
+  .bottom-container {
+    background-color: #393E46;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: thin;
+    padding: 1rem 0 1rem 1rem;
+  }
+
+   .footer-link{
+      color: #686D76;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    .footer-link:hover{
+      color: white;
+      transition-timing-function: ease-in;
+      transition-duration: 0.25s;
+    }
+
+    .copyright{
+      color: #D1D9D9;
+      margin: 1rem 0 0.5rem 0;
+    }
+
+  .coryn-child {
+    background-color: #BD2000;
+    position: relative;
+    box-shadow: 3px 3px 0 #630000;
+  }
+
+  .Tome-of-Offense {
+    background-color: #EBA83A;
+    position: relative;
+    box-shadow: 3px 3px 0 #9C6F25;
+    color: #362222;
+  }
+
+  .Spina-link{
+    background-color: #897853;
+    position: relative;
+    color: #4E3620;
+  }
+
+  .Spina-link a:hover {
+    color: white;
+    transition-timing-function: ease-in;
+    transition-duration: 0.25s;
+  }
+
+  .Do-n-dont{
+    background-color: #AAD8D3;
+    display:block;
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .div-links {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .Reddit-icon {
+    height: 3rem;
+    width: 3rem;
+    display:inline-block;
+    margin-left: 1rem;
+  }
+
+  .Reddit-prompt {
+    width: auto;
+    height: auto;
+    margin: 1rem 1rem 0 1rem;
+    display: inline-block;
+    position: relative;
+    top: 50%;transform: translateY(-60%);
+    font-size: 1.2rem;
+  }
+}
