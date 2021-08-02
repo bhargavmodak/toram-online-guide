@@ -51,8 +51,8 @@ h5 {
 
 p {
  font-size: 1.5rem;
- line-height: 1.5rem;
  display: inline-block;
+  line-height: 1.5rem;
 }
 
 .shifted-p {
@@ -112,7 +112,7 @@ li {
   font-size: 1.5rem;
   display: inline-block;
   position: absolute;
-  left: 70%;
+  right: 3%;
 }
 
 .Introduction {
@@ -195,6 +195,7 @@ li {
   border-radius: 1rem;
   display: block;
   padding: 2rem;
+  line-height: 1.5rem;
 }
 
 .small-level-div{
@@ -223,6 +224,8 @@ li {
 
   .footer-link:hover{
     color: white;
+    transition-timing-function: ease-in;
+    transition-duration: 0.25s;
   }
 
   .copyright{
