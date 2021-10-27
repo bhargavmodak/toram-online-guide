@@ -211,30 +211,20 @@
 
   /************ Footer ********/
 
-  .bottom-container {
-    background-color: #393E46;
-    border-top-style: solid;
-    border-top-color: black;
-    border-top-width: thin;
-    padding: 1rem 0 1rem 1rem;
+  #contact {
+    background-color: #082032;
+    color: white;
+    padding: 3% 10% 0 10%;
+
   }
 
-   .footer-link{
-      color: #686D76;
-      text-decoration: none;
-      margin: 0 0.5rem;
-    }
+  .contact-links {
+    color:#2C394B;
+  }
 
-    .footer-link:hover{
-      color: white;
-      transition-timing-function: ease-in;
-      transition-duration: 0.25s;
-    }
-
-    .copyright{
-      color: #D1D9D9;
-      margin: 1rem 0 0.5rem 0;
-    }
+  .contact-links:hover{
+    color:#334756;
+  }
 
   .coryn-child {
     background-color: #BD2000;

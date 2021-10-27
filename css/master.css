@@ -100,6 +100,10 @@ li {
 }
 */
 
+.whitespacer {
+  padding: 3% 10% 3% 10%;
+}
+
 .title-card {
   background-color: #393E46;
   padding: 5rem 5rem 5rem 7rem;
@@ -210,35 +214,29 @@ li {
 
 /************ Footer ********/
 
-.bottom-container {
-  background-color: #393E46;
-  border-top-style: solid;
-  border-top-color: black;
-  border-top-width: thin;
-  padding: 1rem 0 1rem 1rem;
+#contact {
+  background-color: #082032;
+  color: white;
+  padding: 3% 10% 0 10%;
+
 }
 
- .footer-link{
-    color: #686D76;
-    text-decoration: none;
-    margin: 0 20px;
-  }
+.contact-links {
+  color:#2C394B;
+}
 
-  .footer-link:hover{
-    color: white;
-    transition-timing-function: ease-in;
-    transition-duration: 0.25s;
-  }
-
-  .copyright{
-    color: #D1D9D9;
-    margin: 0;
-  }
+.contact-links:hover{
+  color:#334756;
+}
 
 .coryn-child {
   background-color: #BD2000;
   position: relative;
   box-shadow: 3px 3px 0 #630000;
+}
+
+.author-name {
+  padding: 5%;
 }
 
 .Tome-of-Offense {
