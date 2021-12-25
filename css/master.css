@@ -226,7 +226,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 1.3em;
   font-weight: 100;
   padding: 0.5em 1em;
-  background-color: #393E46;
+  background-color: #2B1F31;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -234,14 +234,18 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .installer-links:hover{
-  background-color: #393E46;
-  color: white;
+  background-color: #413D65;
+  color: #BEF992;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
   text-decoration: none;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transition-timing-function: linear;
+}
+
+.installer-links-div{
+ display: inline;
 }
 /* Site flow end */
 
