@@ -42,7 +42,7 @@ h1 {
 .cards {
   padding: 1.5rem;
   border-radius: 5px;
-  width: 90%;
+  width: 80%;
   margin: 1rem 0;
 }
 
@@ -191,10 +191,6 @@ body::-webkit-scrollbar-thumb:hover {
   .nav-open[type="checkbox"]:checked ~ .sidenav {
     width: 100%;
   }
-
-  .cards {
-    width: 80%;
-  }
 }
 
 /* The navigation menu links */
@@ -222,11 +218,11 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  color: #76EAD7;
+  color: var(--light);
   font-size: 1.3em;
   font-weight: 100;
   padding: 0.5em 1em;
-  background-color: #393E46;
+  background-color: var(--dark);
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -234,13 +230,13 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .installer-links:hover{
-  background-color: #393E46;
+  background-color: var(--semi-dark);
   color: white;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
   text-decoration: none;
-  transition-duration: 1s;
+  transition-duration: 0.3s;
   transition-timing-function: linear;
 }
 /* Site flow end */
