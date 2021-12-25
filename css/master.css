@@ -177,6 +177,31 @@ body::-webkit-scrollbar-thumb {
 
 /* Write here */
 
+.installer-links{
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #76EAD7;
+  font-size: 1.3em;
+  font-weight: 100;
+  padding: 0.5em 1em;
+  background-color: #393E46;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.installer-links:hover{
+  background-color: #393E46;
+  color: white;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
 /* Site flow end */
 
 .Introduction {
