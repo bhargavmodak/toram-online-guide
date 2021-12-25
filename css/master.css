@@ -1,4 +1,4 @@
-/*
+/* Fonts
   font-family: 'Comfortaa', cursive; 500 700
   font-family: 'Work Sans', sans-serif; 300 400 500 600 700 800
 */
@@ -22,6 +22,9 @@ body {
   margin: 0;
   background: url(../images/protruding-squares.svg);
   background-attachment: fixed;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   font: 300 1.25rem 'Work Sans', sans-serif;
   line-height: 1.5;
 }
@@ -29,6 +32,18 @@ body {
 h1 {
   display: block;
   font: 500 5rem 'Comfortaa', sans-serif;
+}
+
+/* Reusable */
+.shadow {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.72);
+}
+
+.cards {
+  padding: 1.5rem;
+  border-radius: 5px;
+  width: 90%;
+  margin: 1rem 0;
 }
 
 /* Scrollbar */
@@ -53,43 +68,45 @@ body::-webkit-scrollbar-thumb:hover {
 
 /*Site flow start*/
 
-.hero {
-  background: inherit;
-  height: 100vh;
-  width:100%;
-}
+/* Hero */
 
-/* Frosted Glass thing */
-  .hero:before {
+  .hero {
     background: inherit;
-    content: '';
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    filter: blur(10px);
+    height: 100vh;
+    width:100%;
   }
 
-/* Container on top of frost */
-.hero-onfrost {
-  display: flex; flex-flow: column wrap; justify-content: center; align-items: center;
-  text-align: center;
-  color: var(--semi-dark);
-  position: absolute;
-  height: inherit;
-  width: inherit;
-}
+  /* Frosted Glass thing */
+    .hero:before {
+      background: inherit;
+      content: '';
 
-.hero-txt {
-  font-size: 6rem;
-}
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
 
-.hero-subtxt {
-  font-size: 2rem;
-}
+      filter: blur(10px);
+    }
+
+  /* Container on top of frost */
+  .hero-onfrost {
+    display: flex; flex-flow: column wrap; justify-content: center; align-items: center;
+    text-align: center;
+    color: var(--semi-dark);
+    position: absolute;
+    height: inherit;
+    width: inherit;
+  }
+
+  .hero-txt {
+    font-size: max(5rem,8vw);
+  }
+
+  .hero-subtxt {
+    font-size: max(1.6rem,3vw);
+  }
 
 /* Last Updated */
 .last-date {
@@ -174,6 +191,10 @@ body::-webkit-scrollbar-thumb:hover {
   .nav-open[type="checkbox"]:checked ~ .sidenav {
     width: 100%;
   }
+
+  .cards {
+    width: 80%;
+  }
 }
 
 /* The navigation menu links */
@@ -199,156 +220,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Site flow end */
 
-.Introduction {
-  text-align: left;
-  margin: 5rem auto 5rem 7rem;
-  width: 70%;
-}
-
-.cards {
-  padding: 2rem 2rem 2rem 2rem;
-}
-
-.content {
-  width: 80%;
-}
-
-/**FORUM BUTTON**/
-.Forum-button {
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   color: #76EAD7;
-   font-size: 1.3em;
-   font-weight: 100;
-   padding: 1em;
-   background-color: #393E46;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center;
-}
-
-.Forum-button:hover {
-   background-color: #393E46;
-   color: #76EAD7;
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   text-decoration: none;
-}
-/**FORUM BUTTON**/
-
-.othersite {
-  color: #EEEEEE;
-  margin: 1rem 0 0 2rem;
-  border-radius: 1rem;
-  display: block;
-  padding: 2rem;
-}
-
-.coryn-club {
-  background-color: #006990;
-}
-
-.Small-div-links {
-  display: inline-block;
-  margin: 1rem;
-  border-radius: 2rem;
-  padding: 1.5rem;
-}
-
-/***** FOR LEVELS child divs *******/
-.level-div{
-  background-color: #CDF0EA;
-  margin: 1rem 0 0 2rem;
-  border-radius: 1rem;
-  display: block;
-  padding: 2rem;
-  line-height: 1.5rem;
-}
-
-.small-level-div{
-  background-color: #F6C6EA;
-  display: inline-block;
-  border-style: solid;
-  border-width: thin;
-  margin: 1rem;
-  border-radius: 2rem;
-  padding: 2rem;
-}
-
-/************ Footer ********/
-
-.contact {
-  background-color: #082032;
-  color: white;
-  padding: 3% 10% 0 10%;
-}
-
-.contact-links {
-  color:#2C394B;
-}
-
-.contact-links:hover{
-  color:#334756;
-}
-
-.coryn-child {
-  background-color: #BD2000;
-  position: relative;
-  box-shadow: 3px 3px 0 #630000;
-}
-
-.author-name {
-  padding: 5%;
-}
-
-.Tome-of-Offense {
-  background-color: #EBA83A;
-  position: relative;
-  box-shadow: 3px 3px 0 #9C6F25;
-  color: #362222;
-}
-
-.Spina-link{
-  background-color: #897853;
-  position: relative;
-  color: #4E3620;
-}
-
-.Spina-link a:hover {
-  color: white;
-  transition-timing-function: ease-in;
-  transition-duration: 0.25s;
-}
-
-.Do-n-dont{
-  background-color: #AAD8D3;
-  display:inline-block;
-  width: 40%;
-}
-
-.div-links {
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: 1;
-}
-
-.Reddit-icon {
-  height: 4rem;
-  width: 4rem;
-  display:inline-block;
-}
-
-.Reddit-prompt {
-  width: auto;
-  height: auto;
-  margin: 1rem 1rem 0 1rem;
-  display: inline-block;
-  position: relative;
-  top: 50%;transform: translateY(-30%);
+.introduction {
+  background-color: rgb(240, 255, 255, 0.7);
+  margin-top: 1rem;
 }
