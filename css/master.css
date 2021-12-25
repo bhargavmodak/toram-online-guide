@@ -224,9 +224,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 0.5em 1em;
   background-color: var(--dark);
   text-decoration: none;
-  display: inline-block;
   cursor: pointer;
-  text-align: center;
 }
 
 .installer-links:hover{
@@ -238,6 +236,10 @@ body::-webkit-scrollbar-thumb:hover {
   text-decoration: none;
   transition-duration: 0.3s;
   transition-timing-function: linear;
+}
+
+.installer-links-div{
+ display: inline;
 }
 /* Site flow end */
 
