@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
 }
 
 body {
@@ -35,6 +36,11 @@ h1 {
   font: 500 5rem 'Comfortaa', sans-serif;
 }
 
+
+h3 {
+  font: 500 2rem 'Comfortaa', cursive;
+}
+
 /* Reusable */
 .shadow {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.72);
@@ -45,6 +51,7 @@ h1 {
   border-radius: 5px;
   width: 80%;
   margin: 1rem 0;
+  background-color: white;
 }
 
 .💪 {
@@ -54,10 +61,6 @@ h1 {
 .btn-container {
   flex-flow: row wrap;
   justify-content: center;
-}
-
-.section-heads {
-  font: 500 2rem 'Comfortaa', cursive;
 }
 
 /* Scrollbar */
@@ -135,7 +138,8 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
   display: flex; flex-flow: column;
   position: fixed; top: 0; left: 0;
-  margin: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   width: 45px;
 }
 
@@ -215,7 +219,7 @@ body::-webkit-scrollbar-thumb:hover {
 .sidenav a {
   padding: 5px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.15rem;
   color: var(--semi-dark);
   display: block;
   transition: 0.5s;
@@ -255,6 +259,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .installer-links:hover{
   background-color: var(--semi-dark);
+  color: whitesmoke;
   transition-duration: 0.3s;
   transition-timing-function: linear;
 }
