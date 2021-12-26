@@ -16,19 +16,25 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
+  scroll-padding-top: 1rem;
 }
 
 body {
   margin: 0;
   background: url(../images/protruding-squares.svg);
   background-attachment: fixed;
+}
+
+.main {
+  width: 100%;
+  background: inherit;
   color: var(--dark);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   font: 400 1.25rem 'Work Sans', sans-serif;
   line-height: 1.5;
+  transition: .5s;
 }
 
 h1 {
@@ -36,9 +42,9 @@ h1 {
   font: 500 5rem 'Comfortaa', sans-serif;
 }
 
-
 h3 {
-  font: 500 2rem 'Comfortaa', cursive;
+  margin-top: 0.5rem;
+  font: 700 1.75rem 'Comfortaa', cursive;
 }
 
 /* Reusable */
@@ -47,11 +53,28 @@ h3 {
 }
 
 .cards {
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 5px;
-  width: 80%;
+  width: 90%;
   margin: 1rem 0;
   background-color: white;
+}
+
+.mobile-indicator {
+  display: none;
+}
+
+@media only screen and (max-width : 767px) {
+  .mobile-indicator {
+    display: block;
+  }
+
+  .cards {
+    text-align: center;
+    margin: 0;
+    padding : 2rem 1rem;
+    width: 100%;
+  }
 }
 
 .💪 {
@@ -87,43 +110,44 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Hero */
 
-  .hero {
+.hero {
+  background: inherit;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Frosted Glass thing */
+  .hero:before {
     background: inherit;
-    height: 100vh;
-    width:100%;
-  }
+    content: '';
 
-  /* Frosted Glass thing */
-    .hero:before {
-      background: inherit;
-      content: '';
-
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-
-      filter: blur(10px);
-    }
-
-  /* Container on top of frost */
-  .hero-onfrost {
-    display: flex; flex-flow: column wrap; justify-content: center; align-items: center;
-    text-align: center;
-    color: var(--semi-dark);
     position: absolute;
-    height: inherit;
-    width: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    filter: blur(10px);
   }
 
-  .hero-txt {
-    font-size: max(5rem,8vw);
-  }
+/* Container on top of frost */
+.hero-onfrost {
+  display: flex; flex-flow: column wrap; justify-content: center;
+  text-align: center;
+  color: var(--semi-dark);
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  transition: .5s;
+}
 
-  .hero-subtxt {
-    font-size: max(1.6rem,3vw);
-  }
+.hero-txt {
+  font-size: max(5rem,8vw);
+}
+
+.hero-subtxt {
+  font-size: max(1.6rem,3vw);
+}
 
 /* Last Updated */
 .last-date {
@@ -141,6 +165,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0.5rem;
   padding: 0.5rem;
   width: 45px;
+  z-index: 2;
 }
 
 .nav-btn-lines {
@@ -189,13 +214,14 @@ body::-webkit-scrollbar-thumb:hover {
   height: calc(100% - 10rem); /* 100% Full-height */
   width: 0; /* 0 width - change this with checked */
 
+  text-align: center;
+
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
 
   background-color: var(--light);
-  box-shadow: 0 0 15px rgba(0, 0, 0, .5);
   overflow-x: hidden; /* Disable horizontal scroll */
   overflow-y: scroll;
   padding: 5rem 0 ; /* Place content 60px from the top */
@@ -204,20 +230,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .sidenav::-webkit-scrollbar {
   width: 0;
-}
-
-.nav-open[type="checkbox"]:checked ~ .sidenav {
-  width: 15rem;
-}
-
-@media only screen and (max-width : 600px) {
-  .nav-open[type="checkbox"]:checked ~ .sidenav {
-    width: 100%;
-  }
-
-  .cards {
-    text-align: center;
-  }
 }
 
 /* The navigation menu links */
@@ -257,7 +269,7 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 17px;
   font-size: 1.5rem;
   padding: 0.7em 1em;
-  margin: 0.7rem;
+  margin: 1.1rem;
   text-decoration: none;
   cursor: pointer;
 }
