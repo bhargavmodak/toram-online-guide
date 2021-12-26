@@ -27,7 +27,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  font: 300 1.25rem 'Work Sans', sans-serif;
+  font: 400 1.25rem 'Work Sans', sans-serif;
   line-height: 1.5;
 }
 
@@ -186,7 +186,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
+  height: calc(100% - 10rem); /* 100% Full-height */
   width: 0; /* 0 width - change this with checked */
 
   position: fixed; /* Stay in place */
@@ -197,8 +197,13 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: var(--light);
   box-shadow: 0 0 15px rgba(0, 0, 0, .5);
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 5rem; /* Place content 60px from the top */
+  overflow-y: scroll;
+  padding: 5rem 0 ; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav::-webkit-scrollbar {
+  width: 0;
 }
 
 .nav-open[type="checkbox"]:checked ~ .sidenav {
@@ -217,9 +222,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 5px;
+  padding: 10px;
   text-decoration: none;
-  font-size: 1.15rem;
+  font: 400 1.2rem 'Work Sans', sans-serif;;
   color: var(--semi-dark);
   display: block;
   transition: 0.5s;
