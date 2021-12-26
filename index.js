@@ -26,3 +26,15 @@ $(".sidenav a").click(function () {
   }
   sidebar();
 });
+
+$(".toggle-icon").click(function () {
+  $(".toggle-icon").toggleClass('fa-sun');
+  $(".toggle-icon").toggleClass('fa-moon');
+  if ($("html").attr('data-theme') == 'dark') {
+    $("html").attr('data-theme', 'light');
+    $("body").css('background','url(images/protruding-squares.svg)')
+  } else {
+    $("html").attr('data-theme', 'dark');
+    $("body").css('background','url(images/protruding-squares-dark.svg)')
+  }
+})
