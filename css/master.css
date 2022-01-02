@@ -17,6 +17,9 @@ html[data-theme='dark'] {
   --medium: #413D65;
   --semi-dark: #5FB9B0;
   --dark: #BEF992;
+  --cards: #201924;
+  --text: #90b474;
+  --shadow: rgba(0, 0, 0, 0.72);
 }
 
 html[data-theme='light'] {
@@ -24,6 +27,9 @@ html[data-theme='light'] {
   --medium: #5FB9B0;
   --semi-dark: #413D65;
   --dark: #2B1F31;
+  --cards: #cbe7b6;
+  --text: #2B1F31;
+  --shadow: rgba(0, 0, 0, 0.72);
 }
 
 
@@ -43,7 +49,7 @@ body {
 .main {
   width: 100%;
   background: inherit;
-  color: var(--dark);
+  color: var(--text);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -64,7 +70,7 @@ h3 {
 
 /* Reusable */
 .shadow {
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.72);
+  box-shadow: 0px 0px 8px var(--shadow);
 }
 
 .cards {
@@ -72,7 +78,7 @@ h3 {
   border-radius: 5px;
   width: 90%;
   margin: 1rem 0;
-  background-color: var(--light);
+  background-color: var(--cards);
 }
 
 .mobile-indicator {
@@ -104,7 +110,7 @@ h3 {
 /* Scrollbar */
 
 body::-webkit-scrollbar {
-  width: 15px;
+  width: auto;
 }
 
 body::-webkit-scrollbar-track {
@@ -157,11 +163,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero-txt {
-  font-size: max(5rem,8vw);
+  font-size: 5rem;
 }
 
 .hero-subtxt {
-  font-size: max(1.6rem,3vw);
+  font-size: 1.6rem;
 }
 
 /* Last Updated */
@@ -272,18 +278,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Introduction */
 .introduction {
-  background-color: rgb(240, 255, 255, 0.7);
   margin-top: 1rem;
 }
 
 /* App Download buttons */
-/* TODO: TheTechnetiumGuy */
-
-/* Write here */
-
-.install {
-  background-color: var(--light);
-}
 
 .installer-links{
   color: var(--light);
