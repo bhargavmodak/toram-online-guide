@@ -5,20 +5,15 @@
 
 /* Root */
 
-:root {
-  --light: #BEF992;
-  --medium: #5FB9B0;
-  --semi-dark: #413D65;
-  --dark: #2B1F31;
-}
-
 html[data-theme='dark'] {
   --light: #2B1F31;
   --medium: #413D65;
   --semi-dark: #5FB9B0;
   --dark: #BEF992;
   --cards: #201924;
-  --text: #90b474;
+  --text: #D5F2BF;
+  --anchor-btn: #4E5C73;
+  --anchor-btn-hvr: #2D323A;
   --shadow: rgba(0, 0, 0, 0.72);
 }
 
@@ -27,8 +22,10 @@ html[data-theme='light'] {
   --medium: #5FB9B0;
   --semi-dark: #413D65;
   --dark: #2B1F31;
-  --cards: #cbe7b6;
+  --cards: #D5F2BF;
   --text: #2B1F31;
+  --anchor-btn: #2D323A;
+  --anchor-btn-hvr: #4E5C73;
   --shadow: rgba(0, 0, 0, 0.72);
 }
 
@@ -107,6 +104,19 @@ h3 {
   justify-content: center;
 }
 
+.🔗 {
+  text-decoration: none;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  font-size: 1.1rem;
+  background: var(--anchor-btn);
+  color: white;
+}
+
+.🔗:hover {
+  background: var(--anchor-btn-hvr);
+  color: white;
+}
 /* Scrollbar */
 
 body::-webkit-scrollbar {
@@ -163,7 +173,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero-txt {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .hero-subtxt {
@@ -264,7 +274,7 @@ body::-webkit-scrollbar-thumb:hover {
 .sidenav a {
   padding: 10px;
   text-decoration: none;
-  font: 400 1.2rem 'Work Sans', sans-serif;;
+  font: 500 1.2rem 'Work Sans', sans-serif;;
   color: var(--semi-dark);
   display: block;
   transition: 0.5s;

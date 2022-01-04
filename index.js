@@ -5,9 +5,11 @@ const currentTheme = localStorage.getItem("theme");
 if (prefersDarkScheme.matches && currentTheme == "dark") {
   $("html").attr('data-theme', 'dark');
   $("body").css('background','url(images/protruding-squares-dark.svg)');
+  $(".toggle-icon").addClass('fa-sun');
 } else {
   $("html").attr('data-theme', 'light');
   $("body").css('background','url(images/protruding-squares.svg)');
+  $(".toggle-icon").addClass('fa-moon');
 }
 
 // A function to toggle the sidebar
@@ -45,8 +47,8 @@ $(".sidenav a").click(function () {
 
 // Changing the theme
 $(".toggle-icon").click(function () {
-  $(".toggle-icon").toggleClass('fa-sun');
   $(".toggle-icon").toggleClass('fa-moon');
+  $(".toggle-icon").toggleClass('fa-sun');
   let theme = "light";
   if ($("html").attr('data-theme') == 'dark') {
     $("html").attr('data-theme', 'light');
