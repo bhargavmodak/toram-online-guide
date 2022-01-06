@@ -12,6 +12,23 @@ if (prefersDarkScheme.matches && currentTheme == "dark") {
   $(".toggle-icon").addClass('fa-moon');
 }
 
+// Changing the theme
+$(".toggle-icon").click(function () {
+  $(".toggle-icon").toggleClass('fa-moon');
+  $(".toggle-icon").toggleClass('fa-sun');
+  let theme = "light";
+  if ($("html").attr('data-theme') == 'dark') {
+    $("html").attr('data-theme', 'light');
+    $("body").css('background','url(images/protruding-squares.svg)');
+  } else {
+    $("html").attr('data-theme', 'dark');
+    $("body").css('background','url(images/protruding-squares-dark.svg)');
+    theme = "dark";
+  }
+  localStorage.setItem("theme", theme);
+})
+
+
 // A function to toggle the sidebar
 function toggleSidebar() {
   // For mobile screens
@@ -35,28 +52,25 @@ function toggleSidebar() {
   }
 }
 
+// Toggle sidebar if button is clicked
 $(".nav-btn").click(toggleSidebar);
 
+// Close navbar if link is clicked on a mobile device
 $(".sidenav a").click(function () {
-  // Close navbar if link is clicked on a mobile device
-  if ($(".mobile-indicator").css('display') == 'block') {
-    $(".nav-open").prop('checked',false);
-  }
+  if ($(".mobile-indicator").css('display') == 'none') return;
+  $(".nav-open").prop('checked',false);
   toggleSidebar();
 });
 
-// Changing the theme
-$(".toggle-icon").click(function () {
-  $(".toggle-icon").toggleClass('fa-moon');
-  $(".toggle-icon").toggleClass('fa-sun');
-  let theme = "light";
-  if ($("html").attr('data-theme') == 'dark') {
-    $("html").attr('data-theme', 'light');
-    $("body").css('background','url(images/protruding-squares.svg)');
+// Toggle Spoiler
+$(".spl-btn").click(function () {
+  if ($(this).children($(".spl-open")).prop('checked')) {
+    $(this).children(".spoiler-content").slideDown(500);
+    $(this).children(".spoiler-head").css('border-radius','5px 5px 0 0');
+    $(this).children(".spoiler-head").children(".fa-chevron-down").css('transform','rotate(180deg) translateY(15%)');
   } else {
-    $("html").attr('data-theme', 'dark');
-    $("body").css('background','url(images/protruding-squares-dark.svg)');
-    theme = "dark";
+    $(this).children(".spoiler-content").slideUp(500);
+    $(this).children(".spoiler-head").css('border-radius','5px');
+    $(this).children(".spoiler-head").children(".fa-chevron-down").css('transform','rotate(0deg) translateY(15%)');
   }
-  localStorage.setItem("theme", theme);
 })
