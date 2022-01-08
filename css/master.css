@@ -15,7 +15,7 @@ html[data-theme="dark"] {
   --anchor-btn: #4e5c73;
   --anchor-btn-hvr: #2d323a;
   --shadow: rgba(0, 0, 0, 0.72);
-  --spoiler-head : var(--medium);
+  --spoiler-head: var(--medium);
 }
 
 html[data-theme="light"] {
@@ -28,7 +28,7 @@ html[data-theme="light"] {
   --anchor-btn: #2d323a;
   --anchor-btn-hvr: #4e5c73;
   --shadow: rgba(0, 0, 0, 0.72);
-  --spoiler-head : #B2DA75;
+  --spoiler-head: #b2da75;
 }
 
 /* Elements */
@@ -83,11 +83,11 @@ hr {
 /* Reusable */
 .shadow {
   box-shadow: 0px 0px 8px var(--shadow);
+  border-radius: 5px;
 }
 
 .cards {
   padding: 2rem;
-  border-radius: 5px;
   width: 90%;
   margin: 1rem 0;
   background-color: var(--cards);
@@ -97,28 +97,6 @@ hr {
 
 .mobile-indicator {
   display: none;
-}
-
-@media only screen and (max-width: 767px) {
-  .main {
-    font-size: 1.1rem;
-  }
-
-  .mobile-indicator {
-    display: block;
-  }
-
-  .cards {
-    margin: 1px 0;
-    padding: 2rem 1.5rem;
-    width: 100%;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  html {
-    scroll-padding-top: 0;
-  }
 }
 
 .💪 {
@@ -144,6 +122,56 @@ hr {
 .🔗:hover {
   background: var(--anchor-btn-hvr);
   color: white;
+}
+
+.👈 {
+  float: left;
+  margin: 0 1rem 0.75rem 0.75rem;
+}
+
+.images {
+  width: 270px;
+  height: auto;
+}
+
+/* Tabs */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border-bottom: 2px solid var(--medium);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  font: 400 0.8rem "Work Sans", sans-serif;
+  background-color: inherit;
+  border-radius: 5px 5px 0 0;
+  color: var(--semi-dark);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--light);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--medium);
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
 }
 
 /* Spoiler */
@@ -173,7 +201,7 @@ hr {
   background-color: var(--light);
   border-radius: 0 0 5px 5px;
   display: none;
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   overflow-y: hidden;
 }
 
@@ -384,3 +412,65 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* Site flow end */
+
+.contact {
+  box-sizing: border-box;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.72);
+  color : white;
+  display: flex;
+  flex-flow : row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-desc {
+  padding: 3rem;
+  width: 50%;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3,5rem);
+  grid-template-rows: repeat(2,5rem);
+  grid-gap: 2rem;
+  margin: 3rem;
+} 
+
+.grid-item > a:visited {
+  color: white;
+}
+
+.grid-item > a:hover {
+  color: gray;
+}
+
+.grid-item > a > i:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 767px) {
+  .main {
+    font-size: 1.1rem;
+  }
+
+  .mobile-indicator {
+    display: block;
+  }
+
+  .cards {
+    margin: 1px 0;
+    padding: 2rem 1.5rem;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  html {
+    scroll-padding-top: 0;
+  }
+
+  .contact-desc {
+    width: 90%;
+  }
+}
