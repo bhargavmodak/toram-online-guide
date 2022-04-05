@@ -5,6 +5,7 @@
 
 /* Root */
 
+/* Dark theme colors */
 html[data-theme="dark"] {
   --light: #2b1f31;
   --medium: #413d65;
@@ -18,6 +19,7 @@ html[data-theme="dark"] {
   --spoiler-head: var(--medium);
 }
 
+/* Light theme colorss */
 html[data-theme="light"] {
   --light: #bef992;
   --medium: #5fb9b0;
@@ -44,6 +46,7 @@ body {
   background-attachment: fixed;
 }
 
+/* The wrapper class that allows us to shrink the content when the sidebar is opened. */
 .main {
   background: inherit;
   color: var(--text);
@@ -57,7 +60,7 @@ body {
 
 h1 {
   display: block;
-  font: 500 5rem "Comfortaa", sans-serif;
+  font: 500 5rem "Comfortaa", cursive;
 }
 
 h3 {
@@ -70,9 +73,17 @@ h4 {
   font: 500 1.6rem "Comfortaa", cursive;
 }
 
+h5 {
+  margin: 0.5rem 0;
+  font: 700 1.4rem "Comfortaa", cursive;
+  /* Underline with offset */
+  text-decoration: underline;
+  text-underline-offset: 0.1em;
+}
+
 h6 {
   margin: 0.5rem 0;
-  font: 300 1rem "Work Sans", sans-serif;
+  font: 300 1rem "Work Sans", cursive;
 }
 
 hr {
@@ -80,10 +91,20 @@ hr {
   opacity: 0.25;
 }
 
+button {
+  border: none;
+}
+
 /* Reusable */
 .shadow {
   box-shadow: 0px 0px 8px var(--shadow);
   border-radius: 5px;
+}
+
+.dashed-rule {
+  border-top: dashed;
+  width: 50%;
+  margin: 2rem auto;
 }
 
 .cards {
@@ -129,9 +150,40 @@ hr {
   margin: 0 1rem 0.75rem 0.75rem;
 }
 
+.👉 {
+  float: right;
+  margin: 0 0.75rem 0.75rem 1rem;
+}
+
 .images {
   width: 270px;
   height: auto;
+}
+
+/* Full wide images with margin : 0 */
+.images-full {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/* images that take up only 50% on PC */
+.screenwide-ss {
+  width: 50%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* Make screenwide-ss 100% on Mobile */
+@media screen and (max-width: 600px) {
+  .screenwide-ss {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Pseudo Bootstrap Classes */
+.p-2 {
+  padding: 0.5rem;
 }
 
 /* Tabs */
@@ -209,7 +261,7 @@ hr {
   transform: translateY(15%);
 }
 
-/* Scrollbar */
+/* Scrollbar, only works for webkit */
 
 body::-webkit-scrollbar {
   width: auto;
@@ -257,13 +309,14 @@ body::-webkit-scrollbar-thumb:hover {
 .hero-onfrost {
   display: flex;
   flex-flow: column wrap;
+  /* Centers vertically */
   justify-content: center;
+  /* Centers horizontally */
   text-align: center;
   color: var(--semi-dark);
   position: absolute;
   height: inherit;
   width: inherit;
-  transition: 0.5s;
 }
 
 .hero-txt {
@@ -283,6 +336,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Navbar */
 
+/* Navigation toggler button */
 .nav-btn {
   cursor: pointer;
   display: flex;
@@ -321,17 +375,17 @@ body::-webkit-scrollbar-thumb:hover {
   display: none;
 }
 
-.nav-open[type="checkbox"]:checked ~ .nav-btn-lines:nth-of-type(1) {
+.nav-open[type="checkbox"]:checked~.nav-btn-lines:nth-of-type(1) {
   transform-origin: bottom;
   transform: rotatez(45deg) translate(8px, 0px);
 }
 
-.nav-open[type="checkbox"]:checked ~ .nav-btn-lines:nth-of-type(2) {
+.nav-open[type="checkbox"]:checked~.nav-btn-lines:nth-of-type(2) {
   transform-origin: top;
   transform: rotatez(-45deg);
 }
 
-.nav-open[type="checkbox"]:checked ~ .nav-btn-lines:nth-of-type(3) {
+.nav-open[type="checkbox"]:checked~.nav-btn-lines:nth-of-type(3) {
   transform-origin: bottom;
   width: 50%;
   transform: translate(21px, -9px) rotatez(45deg);
@@ -339,21 +393,33 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* The side navigation menu */
 .sidenav {
-  height: calc(100% - 10rem); /* 100% Full-height */
-  width: 0; /* 0 width - change this with checked */
+  /* This line to ensure that the sidenav is scrollable */
+  height: calc(100% - 10rem);
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with checked */
 
+  /* Buttons to center */
   text-align: center;
 
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
   left: 0;
+  /* Stay at the left */
 
   background-color: var(--light);
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
   overflow-y: scroll;
-  padding: 5rem 0; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  /* Allow vertical scroll */
+  padding: 5rem 0;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
 }
 
 .sidenav::-webkit-scrollbar {
@@ -411,15 +477,49 @@ body::-webkit-scrollbar-thumb:hover {
   transition-timing-function: linear;
 }
 
+/* Create a div for story */
+.story {
+  margin: 1rem auto;
+  background: url(../images/Story_mode_card_img.png);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/Story_mode_card_img.png), no-repeat;
+  /* Allows width to INCLUDE padding */
+  box-sizing: border-box;
+  /* Offset background image to center */
+  background-position: center;
+  /* Fit width to background image */
+  background-size: cover;
+}
+
+.story-btn {
+  color: #ffffff;
+  background-color: #80709b;
+  border-radius: 17px;
+  font-size: 1rem;
+  padding: 0.7em 1em;
+  text-decoration: none;
+  cursor: pointer;
+  /* Give moderate shadow */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  /* Make font Work sans */
+  font-family: "Work Sans", sans-serif;
+}
+
+.story-btn:hover {
+  background-color: #a48b54;
+  color: #ffffff;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
 /* Site flow end */
 
 .contact {
   box-sizing: border-box;
   width: 100%;
-  background-color:rgba(0, 0, 0, 0.72);
-  color : white;
+  background-color: rgba(0, 0, 0, 0.72);
+  color: white;
   display: flex;
-  flex-flow : row wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -431,21 +531,21 @@ body::-webkit-scrollbar-thumb:hover {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3,5rem);
-  grid-template-rows: repeat(2,5rem);
+  grid-template-columns: repeat(3, 5rem);
+  grid-template-rows: repeat(2, 5rem);
   grid-gap: 2rem;
   margin: 3rem;
-} 
+}
 
-.grid-item > a:visited {
+.grid-item>a:visited {
   color: white;
 }
 
-.grid-item > a:hover {
+.grid-item>a:hover {
   color: gray;
 }
 
-.grid-item > a > i:hover {
+.grid-item>a>i:hover {
   transform: scale(1.1);
 }
 

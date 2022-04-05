@@ -1,18 +1,25 @@
+// Variables to store the theme preferences
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 const currentTheme = localStorage.getItem("theme");
 
 // Function to set theme as theme
 if (prefersDarkScheme.matches && currentTheme == "dark") {
+  // Change CSS
   $("html").attr('data-theme', 'dark');
+  // Change Background
   $("body").css('background', 'url(images/protruding-squares-dark.svg)');
+  // Change toggle icon
   $(".toggle-icon").addClass('fa-sun');
 } else {
+  // Change CSS
   $("html").attr('data-theme', 'light');
+  // Change Background
   $("body").css('background', 'url(images/protruding-squares.svg)');
+  // Change toggle icon
   $(".toggle-icon").addClass('fa-moon');
 }
 
-// Changing the theme
+// Function to change the theme on toggler click
 $(".toggle-icon").click(function () {
   $(".toggle-icon").toggleClass('fa-moon');
   $(".toggle-icon").toggleClass('fa-sun');
@@ -25,6 +32,7 @@ $(".toggle-icon").click(function () {
     $("body").css('background', 'url(images/protruding-squares-dark.svg)');
     theme = "dark";
   }
+  // Saving the theme in local storage
   localStorage.setItem("theme", theme);
 })
 
@@ -34,6 +42,7 @@ function toggleSidebar() {
   // For mobile screens
   if ($(".mobile-indicator").css('display') == 'block') {
     if ($(".nav-open").prop('checked')) {
+      // Open fully
       $(".sidenav").css('width', '100%');
     } else {
       $(".sidenav").css('width', 0);
@@ -41,6 +50,7 @@ function toggleSidebar() {
   } else {
     // For non mobile screens
     if ($(".nav-open").prop('checked')) {
+      // Push the content to the right
       $(".sidenav").css('width', '15rem');
       $(".main, .hero-onfrost").css('width', 'calc(100% - 15rem)');
       $(".main").css('margin-left', '15rem');
@@ -77,15 +87,19 @@ $(".spl-btn").click(function () {
 
 // Functions for Tabbed Content
 $(".tablinks").click(function () {
+  // Make the current tab active
   $(this).addClass("active");
+  // Remove active from all other tabs
   $(this).siblings().removeClass("active");
+
+  // Get the list of classes of the tab
   var classList = $(this).attr('class').split(/\s+/);
   console.log(classList);
   $(this).parent().siblings(".tabcontent").fadeOut(0);
   $(this).parent().siblings("." + classList[1]).fadeIn(500);
 })
 
-// Auto Keep on
+// Auto Keep on depending on what device is being used.
 if ($(".mobile-indicator").css('display') == 'none') {
   $(".desktop.tablinks").click();
 } else {
