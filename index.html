@@ -1,437 +1,986 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-theme="light">
 
 <head>
+  <!-- Meta Data -->
   <meta charset="utf-8">
+  <meta name="color-scheme" content="dark light">
   <meta name="monetization" content="$ilp.uphold.com/k3bDAg2nA8ZB">
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/master.css">
 
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
-
-  <link rel="stylesheet" type="text/css" href="css/master.css">
-  <link rel="stylesheet" type="text/css" href="css/minimaster.css">
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script&family=Montserrat:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
   <!--FontAwesome-->
   <script src="https://kit.fontawesome.com/180bb0a7e4.js" crossorigin="anonymous"></script>
 
-  <title>
-    ToramOnline | Newbie Guide
-  </title>
-  <script type="text/javascript"> </script>
+  <title>Brahmnic's Guide for Toram</title>
 </head>
 
-<!--
-<div class="intro-img-container">
-  <img class="intro-img" src="https://cdn.mmohuts.com/wp-content/uploads/2015/10/Toram_Online_604x423.jpg" alt="Toram Online img">
-</div>
--->
+<body class="background-squares">
 
-<body>
+  <!-- Navigation Panel -->
+  <!-- Side Navbar Button -->
+  <label class="nav-btn" for="check">
+    <input class="chkbox nav-open" type="checkbox" id="check" />
+    <span class="nav-btn-lines"></span>
+    <span class="nav-btn-lines"></span>
+    <span class="nav-btn-lines"></span>
+  </label>
 
-  <!--<div class="navbar">
-    <nav>
-      <li>The Basic Things</li>
-      <li>The Tutorial</li>
-      <li>Chat</li>
-      <li>Characters</li>
-      <li>Ease of Playing</li>
-      <li>Shortcuts</li>
-      <li>Inventory</li>
-      <li>Stats</li>
-      <li>Levels</li>
-      <li>Skills</li>
-      <li>Trading and Economy</li>
-      <li>Orbs</li>
-    </nav>
-  </div>-->
+  <!-- Side Navbar -->
+  <nav id="mySidenav" class="sidenav shadow">
+    <i class="fas fa-2x toggle-icon"></i>
+    <a href="#install">Installing</a>
+    <a href="#tutorial">Tutorial</a>
+    <a href="#chat">Chat</a>
+    <a href="#forums">Forums</a>
+    <a href="#characters">Characters</a>
+    <a href="#ease">Ease of Playing</a>
+    <a href="#shortcuts">Shortcuts</a>
+    <a href="#inventory">Inventory</a>
+    <a href="#stats">Stats</a>
+    <a href="#levels">Levels</a>
+    <a href="#skills">Skills</a>
+    <a href="#trading">Economy</a>
+    <a href="#orbs">Orbs</a>
+  </nav>
+  <!-- Navigation Panel Ends -->
 
-  <div class="title-card">
-    <h1> Toram Online </h1>
-    <h2>Read this if you're new...</h2>
-    <p class="punchy">Last Updated : 27th of October, 2021</p>
-  </div>
+  <!-- Main content -->
+  <section class="main">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-onfrost">
+        <h1 class="hero-txt">Toram Online</h1>
+        <h1 class="hero-subtxt">Read this if you are new!</h1>
+        <h3 class="last-date">(Under construction)</h3>
+      </div>
+    </section>
 
-  <div class="Introduction">
-    <p>So, you decided one day to start searching for an MMORPG!<br>
-      After lots and lots of tries, you managed to find <a href="http://en.toram.jp/" target="_blank">Toram Online</a>? <br>I wonder why?<br><br>
-      Maybe resonated a lot with what you wanted. OR maybe your friend recommended this game to you and you decided to try it
-      out. <br><br> In either case, either you are terribly lost about what to do in the game or your friend is too busy to help you learn all the mechanics, tips, and tricks. So, I suggest reading this starting guide about Toram Online, preferably
-      before you
-      begin, but any time is good too. </p>
-  </div>
-
-  <!--The Basic Things-->
-  <div class="cards greens">
-    <h3>The Basic Things</h3>
-    <div class="content">
-      <ul class="lists" id="one">
-        <li>Toram Online is designed for Andriod and IOS smartphones, so trying to play it on an emulator on a PC with a mouse will not be favorable to you at all. Combat AND movement would be difficult.</li>
-        <li>Toram Online is an immersive 3rd person (non-isometric) and requires both hands to perform combat effectively. If you like playing with one hand, Toram may not be the game for you.</li>
-        <li>You can use Emulators as a workaround(which will get you banned if you are found out), but since Asobimo Games Inc. is primarily focused on mobile gaming, we won't be getting an official PC port.</li>
-        <li>People use emulators to use scripts and bots to cheat in the game, so Asobimo bans those who use emulators.<br><strong>This website or owner is not responsible for any mishaps that occur if you choose to use Emulators.</strong></li>
-        <li>Toram Online <strong>DOES NOT HAVE PVP</strong> as of the latest date mentioned above. It will however, be released this year. If you want PVP content then you might have to search for another game.</li>
-        <li>I tend to refer to monsters as mobs. Please bear with me.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!--The Tutorial-->
-  <div class="cards whites">
-    <h3>The Tutorial</h3>
-    <div class="content" id="two">
-      <ul class="lists">
-        <li>The tutorial makes it clear that your character doesn't have any specific lines. All lines are said by NPCs. The NPC lines are based on your most probable real-life response. There are some instances in the story where you can choose
-          different options, but trust me, <u>none of them affect the story's progress or direction.</u> Just some lore if you are interested. Don't be afraid of being rude to the NPCs or whatever.</li>
-        <li>Toram Online tutorial says that Combat is automated. This is only partially true. Tapping the action button once selects the nearest mob and switches the camera to it. Tapping it again makes your character continuously Normal attack it
-          until it dies, after that, your character sheathes your weapon. </li>
-        <ul style="list-style-type: circle;">
-          <li>The normal attacks are the only things automated in combat. You cannot automatically switch to a different mob. You either tap the action button to select the nearest mob or if you want to fight a specific faraway mob, tap on that mob.
-            You can hold action button to see a list of all mobs and players on the map. </li>
-          <li>Normal attacks deal pathetically low amounts of damage once you reach level 50 or above. (Even at level 25-30 they are weak). The main damage dealing concept in Toram Online are 'SKILLS', specifically attacking skills. You'll figure how
-            to get and unlock and upgrade them on your own. Those are NOT AUTOMATED and require you to focus to use skills at the right time in the right order or to know when to stop using skills and dodge. </li>
-          <li>Therefore, <strong>COMBAT IN TORAM ONLINE IS NOT AUTOMATED AND REQUIRES A LOT OF WORK.</strong> If you favor automated combat, Toram is not for you. </li>
-        </ul>
-        <li>Wondering what happens when you kill the dragon in the tutorial?</li>
-        <ul style="list-style-type: circle;">
-          <li>It takes a long long long time to kill the dragon and you get a 'Proof of Resistance ring.' It is practically useless and is a symbol of wasting your time before the game even begins. </li>
-          <li> <a target="_blank" href="https://toramonline.com/index.php?threads/main-quest-catalog-trivia-updated-to-26-11-20-mq.46239/">Want to Know more about Toram Online's story mode? Click here.</a> </li>
-        </ul>
-      </ul>
-    </div>
-  </div>
-
-  <!--Chat-->
-  <div class="cards blues">
-    <h3>Chat</h3>
-    <div class="content">
-      <ul class="lists">
-        <li>Say - To speak to all people on that map on your channel. The channel number is given in the right-hand bottom corner. </li>
-        <ul style="list-style-type: circle;">
-          <li>Channel number can be changed by <br>「MENU」➡「TERMINAL」➡「Switch Channel」.</li>
-        </ul>
-        <li>Shout - To speak to all people on that map on all channels on your server.</li>
-        <ul style="list-style-type: circle;">
-          <li>The server can be changed by <br>「MENU」➡「TERMINAL」➡「Switch Channel」➡ 「Switch world」 . </li>
-          <li>Switching worlds removes you from a party.</li>
-        </ul>
-        <li>Party - To speak to the 3 members of your party.</li>
-        <li>Guild - To speak to your guild.</li>
-        <li>World - This feature is unavailable as of the given date above.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!--Forums message-->
-  <div class="cards whites">
-    <h3>Have you joined the Unofficial Toram Online Forums?</h3>
-    <div class="content" style="text-align:center;">
-      <a href="https://toramonline.com/index.php" class="Forum-button">If not, check it out here!</a>
-    </div>
-  </div>
-
-  <!--Characters-->
-  <div class="cards greens">
-    <h3>Characters</h3>
-    <div class="content">
-      <ul class="lists">
-        <li>Characters are separate experiences within the same account.</li>
-        <li>All your items, your username, achievements, emblems, Premium currency, and avatars(cosmetics) are shared between all the characters.</li>
-        <li>The characters don't share levels.</li>
-        <li>More info on levels in 'Levels' section below.</li>
-        <li>If you want to start fresh, instead of creating a new account, create a new character. That keeps any valuable items you have with you.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!--Ease of Playing-->
-  <div class="cards whites">
-    <h3>Ease of Playing</h3>
-    <div class="content">
-      <ul class="lists">
-        <li>There are a lot of things not mentioned in Toram's tutorial that makes your experience of Toram much much easier. Here are some of them.</li>
-        <li>Remember when I said that selecting a mob causes the camera to lock onto it? If you don't like this, you can change it using <br>「Menu」➡「Settings」➡「System」➡「Autofocus」➡「Off」. </li>
-        <li>If you want to run faster, you can go to <br>「Menu」➡「Settings」➡「System」➡「Dash」➡「On」.</li>
-        <li>If you don't like the annoying numbers that always pop up when you deal damage, go to <br>「Menu」➡「Settings」➡「Graphics」➡「Damage Font Size」➡「(change slider)」.</li>
-        <li>If you don't like the annoying spammers spamming in the 'SHOUT' section of the chat <br>「Menu」➡「Settings」➡「Chat」➡「Chat Filtering Settings」➡「Toggle Shout」.</li>
-        <li>If your phone can't handle Graphics, go to <br>「Menu」➡「Settings」➡「Graphics」and check out the settings.</li>
-        <li>You can fiddle around with a lot of settings here, it would be really useful.</li>
-        <li>MENU -> Map -> World map are also helpful. The update in June 2021 has made it even easier to search and teleport to places.</li>
-        <li>For Making the red AOE clearer go to 「Menu」➡「Settings」➡「Graphics」. Scroll down to bottom and find 「Atk Warning Quality」and「Display Settings」.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!--Shortcuts-->
-  <div class="cards blues">
-    <h3>Shortcuts</h3>
-    <div class="content">
-      <ul class="lists">
-        <li>In「Menu」➡「Settings」➡「System」➡「Shortcuts」, the different sets are literally different sets of shortcuts, for different situations. You cannot access a shortcut from set 2 if set 1 is enabled. </li>
-        <ul style="list-style-type: circle;">
-          <li>The list is also a shortcut menu. You can tap the top of the page where it says「Page 1 ⬅」 and go to next page. Then tap the bottom "Shortcuts Off" to turn them on. </li>
-          <li>How to access this list? On the home screen, there is a literal button called 'LIST'. Tap the top to go to next page, tap the bottom to close list.</li>
-        </ul>
-        <li>Tap on your name when on the Home screen. You can set up Auto Potion (you need to have potions in your inventory and potions are not unlimited). You can also set up at what % of HP you want to consume the potion. </li>
-        <li>Go to 「Menu」➡「Settings」➡「Guard/Evasion settings」➡「Set both to Manual A」. Those will be easier for you now. Once you get more understanding of those, you can change them later.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!--Reddit prompt messsage-->
-  <div id="Reddit-Prompt" class="cards whites">
-    <img src="https://www.vectorico.com/download/social_media/Reddit-Icon.png" alt="Reddit" class="Reddit-icon">
-    <h3 class="Reddit-prompt">
-      Join <a href="https://www.reddit.com/r/ToramOnline/">r/ToramOnline</a>! 👈
-    </h3>
-  </div>
-
-  <!--Inventory-->
-  <div id="Inventory" class="cards greens">
-    <h3>Inventory</h3>
-    <div class="content">
-      <ul class="lists">
-        <li>You access your inventory by 「Menu」➡「Items」. Unlike most games, equipping a weapon/armor doesn't vanish it from the inventory. </li>
-        <li>There are 50 inventory spaces, each can hold 99 items. A group of 99 items is called a stack. </li>
-        <ul style="list-style-type: circle;">
-          <li>Weapons and armor and additional gear and ring are non-stackable.</li>
-        </ul>
-        <li>You have a storage space, similar to a 'bank locker'. You can access it at any NPC store that has that feature. Usually in Sofya City, El Scaro, and Hora Diomedea. (Unfamiliar names, yes, but soon they will be familiar.)</li>
-        <ul>
-          <li>This also has storage space. For increasing storage space in bank you can use orbs.</li>
-          <li>One orb increases one storage space in personal inventory. (which you can move around)</li>
-          <li> <strong>One orb opens one inventory slot, but one orb opens 5 bank slots. Choose carefully.</strong> </li>
-        </ul>
-        <li>When in your inventory, tap an item. On the left are options on what to do with that item. Tap the「1/2」 icon to open up more options on what to do with that item. </li>
-      </ul>
-    </div>
-  </div>
-
-  <!--Stats-->
-  <div class="cards whites">
-    <h3>Stats</h3>
-    <div class="content">
-      <p class="shifted-p">Early game, monsters are fairly easy, so it is recommended to add all stat points to boost ATK/MATK. For now, you don't have to worry about VIT stat. Defense, MaxHp, and MaxMP can be gained from equipments.
-        <br> <br> <strong>HIT and FLEE are useless,</strong> as of given date above. The game is very unbalanced with respect to those. Monsters have unreasonably high HIT and FLEE compared to players. Don't try to increase these.
+    <!-- Introduction -->
+    <section class="shadow cards introduction">
+      <h4>Hello, and Welcome to Toram Online !!</h4>
+      <hr class="dashed-rule">
+      <p>We hope you have a wonderful time playing this game. This guide is intended to help you get started! If you
+        want to contribute or correct this guide, Check out the <a class="🔗" href="#contact">Contact</a> section below!
       </p>
-      <!--Accuracy question-->
-      <div class="othersite" style=" color: black; border-color : #39A6A3; border-width :medium; border-style : dashed; border radius: 2rem;">
-        'But how can I not miss if I don't increase Accuracy?'
-        <br>
-        <ul class="lists">
-          <li>Magic never misses, but can be guarded. It also cannot be evaded.</li>
-          <li>Criticals never miss either, but their damage fluctuates a lot if they graze. (If an attack was going to miss but it was also critical, it will graze. Graze reduces stability.)</li>
-        </ul>
+      <p> Toram Online is an immersive 3rd person (non-isometric) MMORPG.
+        <br>That means you can move the camera around,
+        and the view isn't locked to a single perspective.
+      </p>
+      <p>Toram Online is a game from 2015, so the graphics are old school.
+        <br> If you prefer better graphics, you can
+        try other <a class="🔗" target="_blank" href="https://asobimo.com/">Asobimo Games</a> here.
+      </p>
+      <p>Also, if you came here looking for PvP, you might be disappointed. <strong>As of the given above date, there is
+          no PvP feature in Toram.</strong> It is in production, but this guide makes no claims to when it may be
+        actually released.</p>
+      <hr class="dashed-rule">
+      <h6>This Toram Online Guide is in no way affliated with Asobimo, Inc.</h6>
+      <h6>It is purely a fan derivative work. The images included in this guide <em>taken from game or the official
+          website</em> belong to © ASOBIMO, INC. All rights reserved.</h6>
+    </section>
+
+    <!-- Installing -->
+    <section class="cards shadow install" id="install">
+      <h3 class="section-heads">Installing</h3>
+      Toram Online is available on the following platforms:
+
+      <div class="💪 btn-container">
+        <a href="https://play.google.com/store/apps/details?id=com.asobimo.toramonline" class="installer-links shadow"
+          target="_blank"><i class="fab fa-google-play"></i> Android</a>
+        <a href="https://itunes.apple.com/jp/app/rpg-toramuonrain/id988683886?mt=8" class="installer-links shadow"
+          target="_blank"> <i class="fab fa-apple"></i> Apple</a>
+        <a href="https://store.steampowered.com/app/1827180/_/" class="installer-links shadow" target="_blank"> <i
+            class="fab fa-steam"></i> Steam</a>
+        <a href="https://toram.jp/pc/dl/" class="installer-links shadow" target="_blank"> <i
+            class="fab fa-microsoft"></i> Windows</a>
       </div>
 
-      <!--Coryn Club-->
-      <div class="othersite coryn-club">
-        <h4>Coryn Club!</h4>
-        <p class="shifted-p">This site is the go to site for most of Toram Online Players for data.
-          There is a lot of info, but it is not an exhaustive list.
-          The below text is active, <u>click the ones</u> you are interested in.</p>
+      <p>Before you install, It is a good idea to read the <a class="🔗" href="http://en.toram.jp/outline/rule/"
+          target="_blank">Terms of
+          Use</a> and the <a class="🔗" href="http://en.toram.jp/outline/privacy/" target="_blank">Privacy Policy</a>.
+      </p>
+      <p>If you engage in malpractice, then you can be penalized according to the <a class="🔗"
+          href="http://en.toram.jp/outline/penalty/">Penalty Policy</a>.</p>
+      <p>If you are underage, you may have to read <a class="🔗" href="http://en.toram.jp/outline/manner/">Another
+          policy</a>.</p>
 
-        <!--Coryn Maths-->
-        <div class="Small-div-links coryn-child">
-          <a class="coryn-links" href="http://coryn.club/guide.php?key=status"><span class="div-links"></span></a>
-          <h5 style="color : #FAEEE7;">The Mathz behind the statz!</h5>
-          <p class="shifted-p">
-            Use the sidebar in this website to navigate!!
-          </p>
-        </div>
-
-        <!--Coryn Items-->
-        <div class="Small-div-links coryn-child">
-          <a class="coryn-links" href="http://coryn.club/index.php"><span class="div-links"></span></a>
-          <h5 style="color : #FAEEE7;">What gear gives you what?</h5>
-          <p class="shifted-p">
-            On this site, scroll down the sidebar and use the feature called advanced search to find out what equipment give what. Like, what gives MaxMP, etc. Please don't make a post just to
-            ask how to increase MaxMP or something. You are playing an MMORPG! You should learn those things by searching for yourself.
-          </p>
-        </div>
+      <!-- Spoiler : Data Transfer -->
+      <div class="spoiler">
+        <label class="spl-btn" for="check2">
+          <input class="chkbox spl-open" type="checkbox" id="check2">
+          <div class="spoiler-head"> Data Transfer <i class="fas fa-chevron-down"></i></div>
+          <div class="spoiler-content">
+            <img class="👈 images" src="images\en_toram_asobimoaccount_.png"
+              alt="Image explaining sharing to the Cloud">
+            <p>Toram Online does not use Google Play services to store your gameplay progress. If you want to play on
+              multiple devices, or if you came back to Toram after a hiatus, you have to use the system provided by
+              Asobimo itself, called <a class='🔗' href="https://en.toram.jp/faq/category/?type=account">Asobimo
+                Accounts</a>.</p>
+            <p>If you want a comprehensive guide on how to do that, you can check out their <a class="🔗"
+                target="_blank" href="https://blog.toram.jp/en-about-asobimo-account/">Blog on Asobimo Accounts</a>.</p>
+            <br>
+            <h6>Image belongs to © ASOBIMO, INC.</h6>
+          </div>
+        </label>
       </div>
 
-      <!--Tome of Offense-->
-      <div class="othersite Tome-of-Offense">
-        <a href="https://toramonline.com/index.php?threads/thexiiithguys-tome-of-offense.50196/"><span class="div-links"></span></a>
-        <h4 style="color: #BB371A;">The Tome of Offense</h4>
-        <p class="shifted-p">
-          The XIIIth Guy was a user on Toram Online Forums Years ago.
-          <br> He and Mayan compiled a tome of offense and a tome of defense, the former of which is given here. <br> Hail the Holy Tome!!
+      <!-- Spoiler : Issues -->
+      <div class="spoiler">
+        <label class="spl-btn" for="check3">
+          <input class="chkbox spl-open" type="checkbox" id="check3">
+          <div class="spoiler-head"> Issues <i class="fas fa-chevron-down"></i></div>
+
+          <div class="spoiler-content">
+
+            <li><strong>Game gets disconnected when launching Toram Online : </strong> <br>
+              <a class='🔗' target='_blank'
+                href='https://www.reddit.com/r/ToramOnline/comments/rqg17n/20211228_about_an_issue_where_the_game_gets/'>
+                This Reddit Post</a> provides a solution. There is also the <a class='🔗' target='_blank'
+                href='http://en.toram.jp/information/detail/?information_id=6888'>Official Notice</a>, but some
+              characters on that page are not properly rendered.
+            </li> <br>
+
+            <li><strong>Unauthorized Action Detected : </strong> <br>
+              This problem generally occurs when you have a program installed on your device that may be used for
+              cheating purposes. It includes, but is not limited to, VPN creators, LAN simulators, autoclickers, apps
+              that could be used to root the game, cheat engines, etc. <br>
+              Please note that not all apps will cause this. The author used UIPath Studio for working with RPA and it
+              doesn't trigger the error. <br>
+              <u>Yes, we know that you may not be using the application for cheating</u> in Toram Online, however, the
+              problem
+              of bot accounts in Toram is <em>very prolific</em> and hence Asobimo has to take extreme precautions. <br>
+              In that case, you have to use a different device rather than the one you use for work.
+            </li>
+
+          </div>
+        </label>
+      </div>
+
+      <!-- Insert svg character here -->
+      <!-- Lots of policies!!! -->
+    </section>
+
+    <!--The Tutorial-->
+    <section class="cards shadow tutorial" id="tutorial">
+      <h3>The Tutorial</h3>
+
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks desktop">PC/Steam</button>
+        <button class="tablinks mobile">Android/iOS</button>
+      </div>
+
+      <!-- Tab content -->
+      <!-- Content for desktop -->
+      <div class="tabcontent desktop">
+        <!-- Describe that it takes long to load the game -->
+        <p>
+          <strong>Note:</strong> The game takes a long time to load, and varies according to your internet connection.
+          Please be patient and do not make a redundant Reddit post/Forum Thread.
         </p>
-      </div>
-    </div>
 
-  </div>
+        <!-- Spoiler : Character Creator -->
+        <div class="spoiler">
+          <label class="spl-btn" for="check4">
+            <input class="chkbox spl-open" type="checkbox" id="check4">
+            <div class="spoiler-head"> Character Creator <i class="fas fa-chevron-down"></i></div>
+            <div class="spoiler-content">
+              <p>The first thing that pops up will be the character creator.
+                If you already played Toram Online, you can choose to transfer your account, as mentioned in
+                <a class='🔗' href='#install'>Installing</a> → Data Transfer.
+              </p>
+              </p>
+              <p>Otherwise, you will be shown the following screen:</p>
 
-  <!--Levels-->
-  <div class="cards blues">
-    <h3>Levels</h3>
-    <div class="content">
-      <ul class="lists">
-        <li>The current level cap is 230 as of the given above date.</li>
-        <li>Toram Online is a 2015 game, so obviously, most players are high level and most
-          events are aimed at level 150+ players. But, there are also events for all levels. You need not worry.</li>
-        <li>Money, (currency called spina) is currently earned by mass killing mobs with an AOE and selling the materials (mats) to the NPC stores.
-          The good AOE skills unlock at level 70, and if you need boosts on those you need to be level 150+</li>
-        <li>If you don't want money and want to enjoy the game and the story normally while defeating mobs with hard work, you can do that. However,
-          don't expect us to help you. That is because we already have a helping system in place by the name of mercenaries. </li>
-        <li>Using「MENU」➡「Community」➡「Guild」➡「Mercinaries」or just simply friend mercenaries or even hired mercenaries, you can easily fight bosses.
-          Furthermore, if a boss is hard, you need to exit (standing on exit for 10 seconds) and reenter in easy mode. </li>
-        <li>That's why, if you chose to do story mode while having fun, (while I will help because I enjoy helping) players will not help you and suggest you to put down your pride and do it in easy mode.
-          If you want to do story with hard work and the feeling of winning, you need to do it on your own (or get a new player like you alongside)</li>
-        <li>Iv'e already told you why people want to level up to level 150, it's to get stronger to fight mobs to earn spina.</li>
-      </ul>
-      <div class="level-div">
-        <h5>Do you Want to level up to 150 fast?</h5>
-        <p class="shifted-p">If you are a newbie, the fastest way to get to level 150 is to play story up to chapter 9 complete. You'll be at level 150 at the end of it. People will tell you to do the next chapters too.
-          No need to do that, level 150 is enough. Save it up for future when you need exp to reach a benchmark level like 205 or 200.</p>
+              <img class="👈 screenwide-ss" src="images\en_toram_character_creator_.jpg"
+                alt="Image explaining character creation">
 
-        <div class="small-level-div">
-          <h5> <a href="https://toramonline.com/index.php?threads/general-leveling-guide.51846/">Text</a></h5>
-          -by Amaymon
+              <p>As you can see in the image, the warning says you can set only 8 characters max, but in practice you
+                can
+                enter upto 16 characters including spaces. Asobimo.Inc has not updated this section. Try not to keep
+                offensive words and follow the <a class="🔗" href="http://en.toram.jp/outline/rule/"
+                  target="_blank">Terms of Use</a>. </p>
+
+              <p>Note that you cannot change your name ever (except with premium currency), and all characters will have
+                this name when used in Chat.</p>
+
+              <hr class="dashed-rule">
+
+              <img class="👉 screenwide-ss" src="images\character-creator-highlight.jpg"
+                alt="Image explaining Highlights">
+
+              <p>The next part is pretty straightforward. There are 4 types : Male, Female, Neutral A and Neutral B.
+                <br> <br> One thing to note is the Highlights don't show up on all Hair types, but a choice few as shown
+                here.
+              </p>
+
+              <p>Changing the appearance also costs either premium currency, or hard to get items in-game. So design
+                your character with that in mind. <br> Do note that you can always create a new character (Level 1) with
+                a
+                different appearance, so you don't need to spend a lot of time either.</p>
+
+              <hr class="dashed-rule">
+
+            </div>
         </div>
-        <div class="small-level-div">
-          <h5><a href="https://www.youtube.com/watch?v=iEGoAVVSoMw">Video</a></h5>
-          -by Poi PoiiPoiii
-        </div>
-        <p class="shifted-p">If you already have a character at level 150, then the faster way is to get your guildmates and do something called as Powerleveling. It is the most efficient way of leveling.
-          But you will need strong skills (tier 4 skills unlocked at level 150) to powerlevel fast. Your Guild will be able to help much better. </p>
-      </div>
-    </div>
-  </div>
 
-  <!--Skills-->
-  <div class="cards whites">
-    <h3>Skills</h3>
-    <div class="content">
-      <ul class="lists">
-        <li>Toram has a classless system meaning you can get skills from any skill tree.
-          The weapon you choose in Tutorial only determines which skill page you unlock first. </li>
-        <li>To upgrade skills you need to get skill pages. Those can be bought at the Sofya City library. Some pages are in books that you can't find in the library. Those books have special skills.
-          Those can be purchased from other players or be won as prizes from treasure chests. (Complete chapter 2 lesson 1 to understand what those are.)'</li>
-        <li>Skill pages are divide into tiers. Tier 0 to 4.
+        <!-- Spoiler : Weapon Selection -->
+        <div class="spoiler">
+          <label class="spl-btn" for="check5">
+            <input class="chkbox spl-open" type="checkbox" id="check5">
+            <div class="spoiler-head"> Weapon Selection <i class="fas fa-chevron-down"></i></div>
+            <div class="spoiler-content">
+
+              <p>
+                Toram Online has a classless system. You can choose any weapon you want, but you can only equip one at
+                a time. You can also have sub-weapons (such as a sword with a shield). <br>
+
+                However, some of the skills are exclusive to weapons. So you can't use them without that particular
+                weapon. Learn more about skills at the <a class='🔗' href='#skills'>Skills</a> section.
+              </p>
+
+              <p>
+                <strong>Note:</strong> You can always change your weapon, but you can't change your skillset. So while
+                you can create an ALL in one character that can wield any weapon, the skill and stat points you have are
+                very limited.
+              </p>
+
+              <img class="👈 screenwide-ss" src="images\en_toram_weapon_selector_.jpg"
+                alt="Image explaining weapon selection">
+
+              <p>
+                Don't be fooled by Asobimo's descriptions for weapons. The weapons are not labelled properly based on
+                their difficulty for a newbie. A more accurate list would be : </p>
+              <ul>
+                <li>Staff : Easy </li>
+                <li>Katana : Normal </li>
+                <li>Knuckle : Easy for tank, Hard for DPS</li>
+                <li>Sword : Normal</li>
+                <li>Halberd: Hard</li>
+                <li>Bow : Easy</li>
+              </ul>
+              <p>
+                There are actually more weapons than those, and different combinations of weapons. Hence, such a
+                superficial description is actually really misleading. There is also the divide between tanking and
+                doing damage, each of which have varying levels of difficulty.
+              </p>
+
+              <p>
+                If you want to know an in-depth analysis of the different weapons and which one you should make, go to
+                <a class='🔗' target='_blank'
+                  href='https://toramonline.com/index.php?threads/what-class-is-good-for-newbies.52095/#post-532113'>This
+                  thread on Forums</a> where I try to analyze the different weapons and which one is good.
+              </p>
+
+              <hr class="dashed-rule">
+
+              <h6>
+                Of course, if you have a better, updated analysis on the best newbie weapon, you can contact me using
+                the bottom of the page.
+              </h6>
+
+            </div>
+          </label>
+        </div>
+
+        <!-- Spoiler : Dialogue -->
+        <div class="spoiler">
+          <label class="spl-btn" for="check4.5">
+            <input class="chkbox spl-open" type="checkbox" id="check4.5">
+            <div class="spoiler-head"> Dialogue <i class="fas fa-chevron-down"></i></div>
+            <div class="spoiler-content">
+
+              <img class="👉 screenwide-ss" src="images\npc-dialogue.jpg" alt="Image explaining Dialogue">
+              <p>
+                The tutorial demonstrates that your character doesn't have any specific lines. All lines are said by
+                NPCs. Sometimes the NPCs act as if you have spoken something to them, even if you haven't. The game
+                simply assumes that you as the player must have asked something aloud in your room.
+              </p>
+              <p>
+                There are some instances in the story (pictured) where you can choose different options, but trust me,
+                none of them affect the story's progress or direction.
+              </p>
+              <img class="👈 screenwide-ss" src="images\npc-dialogue-2.jpg" alt="Image explaining Dialogue">
+              <p>
+                Just like these options, which are fake. You cannot skip the tutorial.
+              </p>
+              <span>In case you miss any dialogue, you can access it from the chat window too.</span> <br>
+              <img class="images" src="images\npc-dialogue-chat.png" alt="NPC Dialogue shows up in the Chat window.">
+
+            </div>
+          </label>
+        </div>
+
+        <!-- Spoiler : Elements on the screen -->
+        <div class="spoiler">
+          <label class="spl-btn" for="check6">
+            <input class="chkbox spl-open" type="checkbox" id="check6">
+            <div class="spoiler-head"> Elements on the screen <i class="fas fa-chevron-down"></i></div>
+            <div class="spoiler-content">
+              <p>
+                Let us look at the different areas of the screen. This will be mostly what you see when you play Toram
+                Online. There are certain instances when parts of these can change based on the activity you are
+                performing.
+              </p>
+              <!-- Image to show screen -->
+              <img class="images-full" src="images\en_toram_pc_screen_elements_.jpg"
+                alt="Image explaining elements on the screen">
+
+              <h5>Minimap</h5>
+              <p>
+                <!-- Image to show how minimap is -->
+                <img class="👉 images" src="images\minimap.png" alt="Image explaining minimap">
+                At the top right corner you see the Minimap, which shows the map of the instance you are in.
+                <strong>Maps in Toram Online are not continuous, but sharded into a theme-park style MMO.</strong> The
+                map does not show the entire area if the instance you are in is a multi-level or has multiple points
+                of elevation. Learn more about <a class='🔗' href='#servers'>Servers and Worlds</a> to know about the
+                World indicator.
+                <br>
+                <li>The minimap also shows the location of the player, in the form of an arrowhead.</li>
+                <li>Party members are blue dots, while other players are white dots.</li>
+                <li>Non aggro'ed mobs are red, while aggro'ed mobs are orange.</li>
+                <li>NPC characters are green dots,</li>
+                <li>Question marks and Exclamation marks are quest indicators.</li>
+              </p>
+
+              <h5>Chat Window</h5>
+              <p>
+                Learn more about how the Chat Window works at the <a class='🔗' href='#chat'>Chat</a> section.
+              </p>
+
+              <h5>Level Bar</h5>
+              <p>
+                The Level Bar is the bar that shows your current level and your current EXP. At 100%, you move to the
+                next level. It also shows your username (useful for verification on some sites), the date and the time
+                (so you know when to stop playing).
+                To get more info about the leveling system, check out <a class='🔗' href='#levels'>Levels</a>.
+              </p>
+
+              <h5>Hotbar and Quick Keys</h5>
+              <p>
+                The Hotbar is used to access your skills and items. It is located at the bottom of the screen.
+                You can assign upto 9 skills to the Hotbar. The Quick keys may be also used for assigning skills or
+                consumables. Learn more about assigning shortcuts at the <a class='🔗' href='#shortcuts'>Shortcuts</a>
+                section.
+              </p>
+
+              <h5>Menu Options</h5>
+              <p>
+                These are used for miscellaneous options. You can access them by pressing the keys specified on them.
+                You can change those keys by using the <a class='🔗' href='#shortcuts'>Shortcuts</a> section.
+                <br>
+                Currently, if you are in the tutorial, they will be locked. We will learn more about them later.
+              </p>
+
+            </div>
+          </label>
+        </div>
+
+        <!-- Explaining the F key error -->
+        <div>
+          <img class="👈 images" src="images\still_press_f.png" alt="The monster select key is still the F key.">
+          <p>
+            When you get further in the tutorial, you will see more actions.
+            This is a mistake by Asobimo. You still have to use the 'F' key.
+          </p>
+          <p>
+            <i class="fas fa-lightbulb"></i> Tip: Killing all the mobs will get you to level 8.
+          </p>
+          <p>
+            <strong>Note : </strong> Don't try to solo the 'Pico' monster. It is not a monster you can defeat at your
+            current level. You will waste a lot of time trying to do so.
+          </p>
+        </div>
+
+        <hr class="dashed-rule">
+
+        <!-- Explaining a little about Aggro -->
+        <div>
+          <h5>Aggro</h5>
+          <!-- Image floating right explaining aggro -->
+          <img class="screenwide-ss 👉" src="images\aggro.png" alt="Image explaining aggro">
+          <p>
           <ul>
-            <li><strong>Most (NOT ALL)</strong> main weapon skill pages from tier 0 and 1 are unlocked at level 0</li>
-            <li>Tier 2 pages unlock at level 30</li>
-            <li>Tier 3 pages unlock at level 70</li>
-            <li>Tier 4 pages unlock at level 150</li>
+            <li>Monsters will attack you if they are aggro'ed on you. Aggro is a state that is set when a monster is
+              disturbed, either by a player, a pet, an NPC. A monster with a higher level than you has a chance that it
+              will
+              attack you if you are within a certain distance of it.
+            <li>Monsters aggro'ed on you are indicated by an arrow as shown. Monsters aggro'ed on you try to attack you
+              until
+              you are dead, they are dead, you are 24 meters or more away, or another party member generated more aggro
+              than
+              you.
+            <li>Bosses don't follow the 24 m rule, and will pursue you until one of you dies. Minibosses will stop
+              attacking
+              if you go a considerable distance away from where they spawned.
+            <li>All aggro is reset if you change the map. Learn more about aggro mechanics at the <a class='🔗'
+                href='#aggro'>Aggro</a> section.
           </ul>
-        </li>
-        <li>Those levels are the levels of your highest leveled character. If you have a level 120 character and a level 40 character, then even the level 40 character can use tier 3 skills.
-          If you then delete the level 120 character, then whatever pages you had purchased for the level 40 character remain. But you cannot get new pages. </li>
-        <li>Tier 4 skills are the strongest and help you level your other characters faster and also farm faster. Hence everyone keeps telling you to do story up to chapter 9 and to get to level 150.
-          If you want, you can enjoy the game at your own pace (It helps you learn combat skills and mechanics. I recommend it) But you won't find many people around your level because, Toram is an old game. People are already high level. </li>
-      </ul>
-    </div>
-  </div>
-
-  <!--Trading and Economy-->
-  <div class="cards greens">
-    <h3>Trading and Economy</h3>
-    <div class="content">
-      <ul class="lists">
-        <li>You can trade with other people by tapping on them and clicking trading.
-          You don't need to actually give them anything in trade, or even coins, though. You need to be able to see them though.
-          <ul>
-            <li>As always, more options show up on list when you tap the top arrow. </li>
-          </ul>
-        </li>
-        <li>You can gift a friend, party member or a guild member from long distance. This is however only one item at a time. You can also mail them over long distances, so they can see it when they come back online.</li>
-        <li>Sofya City, El Scaro and Hora Diomedea have Trading boards called consignment boards. You can register your item there, and people will search for your item and buy it. However, the government taxes you. You can even do cross - server in
-          this method, but then there's an ADDITIONAL tax.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!--Orbs-->
-  <div class="cards whites">
-    <h3>Orbs</h3>
-    <div class="content">
-      <ul class="lists">
-        <li>Orbs are the premium currency of Toram Online.</li>
-        <li>If you want to spend money on this game, you can spend your orbs however you want to.
-          Toram is not P2W anyway. There is nothing to 'win' either. </li>
-        <li>If you are an <strong>F2P player</strong>:</li>
-      </ul>
-    </div>
-
-    <!--Do not-->
-    <div class="Small-div-links Do-n-dont">
-      <h4>DO NOT <br> spend your orbs on:</h4>
-      <ul type="circle">
-        <li>Item chests</li>
-        <li>Avatar chests</li>
-        <li>EXP or Drop rate Books</li>
-        <li>Revival droplets</li>
-        <li>Teleport tickets</li>
-        <li>Gem lottery</li>
-      </ul>
-    </div>
-
-    <!--Do-->
-    <div class="Small-div-links Do-n-dont">
-      <h4>DO <br> spend your orbs on: <br> </h4>
-      <ul type="circle">
-        <li>More storage space in the NPC store.
-          Refer <a href="#Inventory">▶Inventory◀</a> for more info.</li>
-        <li>More Character Slots. <br>「Menu」➡「Character」➡「Switch Character」➡「Buy Character Slot」. </li>
-        <li>Rare deals like Guaranteed piercer/Ultimate/Glory Gem.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="cards Spina-link">
-    <h3>You want to earn a lot of spina?</h3>
-    <h4><a href="spina.html">Then click here ~</a></h4>
-  </div>
-
-  <!--
-  <div class="cards">
-    <h3></h3>
-    <div class="content">
-      <ul class="lists">
-      </ul>
-    </div>
-  </div>
--->
-
-  <section id="contact">
-
-    <div class="container-fluid whitespacer">
-
-      <div class="row">
-        <div class="col-lg-6">
-          <a href="https://www.linkedin.com/in/bhargav-modak-a837b7210/" class="contact-links"><i class="fab fa-linkedin m-3 fa-2x contact-pics"></i></a>
-          <a href="https://twitter.com/thebrahmnicboy" class="contact-links"><i class="fab fa-twitter m-3 fa-2x contact-pics"></i></a>
-          <a href="https://github.com/TheBrahmnicBoy" class="contact-links"><i class="fab fa-github m-3 fa-2x contact-pics"></i></a>
-          <a href="https://discordapp.com/users/427363700781875200/" class="contact-links"><i class="fab fa-discord m-3 fa-2x contact-pics"></i></a>
-          <a href="https://www.reddit.com/user/TheBrahmnicBoy" class="contact-links"><i class="fab fa-reddit m-3 fa-2x contact-pics"></i></a>
+          </p>
         </div>
-        <div class="col-lg-6">
-          <div class="container-fluid author-name">
-            TheBrahmnicBoy
+
+        <hr class="dashed-rule">
+
+        <!-- Combat in Toram online is not automated -->
+        <div>
+          <h5>Combat is not Automated!</h5>
+          <p>
+            Toram Online tutorial says that Combat is automated. This is only partially true. Pressing the action button
+            once selects the nearest mob and switches the camera to it. Pressing it again makes your character
+            continuously Normal attack it until it dies, after that, your character sheathes your weapon.
+          </p>
+          <p>
+            The normal attacks are the only things automated in combat. You cannot automatically switch to a different
+            mob. You either press the action button to select the nearest mob or if you want to fight a specific faraway
+            mob, click on that mob. You can press TAB to see a list of all mobs and players on the map.
+          </p>
+          <p>
+            Normal attacks deal pathetically low amounts of damage once you reach level 50 or above. (Even at level
+            25-30
+            they are weak). The main damage dealing concept in Toram Online are <a class='🔗' href='#skills'>Skills</a>
+            ,
+            specifically attacking skills. Those are NOT AUTOMATED and require you to focus to use skills at the right
+            time in the right order or to know when to stop using skills and dodge.
+          </p>
+          <p>
+            Therefore, <strong>COMBAT IN TORAM ONLINE IS NOT AUTOMATED AND REQUIRES A LOT OF WORK</strong> . If you
+            favor
+            automated combat, Toram is not for you.
+          </p>
+        </div>
+
+        <!-- Spoiler : The Dragon Battle -->
+        <div class="spoiler">
+          <label class="spl-btn" for="check7">
+            <input class="chkbox spl-open" type="checkbox" id="check7">
+            <div class="spoiler-head"> The Dragon Battle <i class="fas fa-chevron-down"></i></div>
+            <div class="spoiler-content">
+              <p>
+                Oh, we're not covering the Forest wolf battle. The NPC can solo it. Also, the recommendation is to skip
+                the dragon battle and go to the exit, as specified.
+              </p>
+
+              <p>
+                The reward you get for the dragon battle is <a class='🔗' target='_blank'
+                  href='https://coryn.club/item.php?name=proof+of+resistance'>Proof of Resistance</a> ring, which is
+                useless.
+              </p>
+
+              <!-- Float left screenwide ss -->
+              <img class="screenwide-ss 👈" src="images\party_support_menu.png" alt="The party support menu">
+              <p>
+                However, you can still learn some mechanics from this battle :
+                <br> ⇒ You can have up to 4 party members.
+                <br> ⇒ Select party members to view the interaction menu.
+                <br> ⇒ Using Alt opens up the support menu.
+                <br> ⇒ The support menu allows you to heal, buff, and revive party members.
+                <br> ⇒ Try to understand how this works by reviving someone if they die.
+                <br> ⇒ Do note that you are not invincible when reviving someone else, so you can die if you are not
+                careful.
+              </p>
+
+            </div>
+          </label>
+        </div>
+
+        <p>
+          This concludes the tutorial. You can now start playing the game.
+        </p>
+
+        <hr class="dashed-rule">
+        <!-- Advertisement div that shares another site having more info on story mode -->
+        <div class="cards shadow story">
+          <h4 style="color: whitesmoke;">Want to know more about the story mode?</h4>
+          <p>
+            <a target="_blank"
+              href='https://toramonline.com/index.php?threads/main-quest-catalog-trivia-updated-to-24-03-22-mq.46239/'><button
+                class='story-btn'>Main quest Catalog and Trivia by XPPlayer1337</button></a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Content for mobile -->
+      <div class="tabcontent mobile">
+        <p>Paris is the capital of France.</p>
+        <p>Paris is the capital of France.</p>
+        <p>Paris is the capital of France.</p>
+        <p>Paris is the capital of France.</p>
+      </div>
+
+    </section>
+
+    <!-- Servers -->
+    <section class="cards shadow servers" id="servers">
+      <h3>Channels, Servers and Worlds</h3>
+      <div class="content">
+        <p>
+          Toram Online is a multiplayer game. Unlike Albion Online, the game does not run on a single server where each
+          logged in player can see every other logged in player. In that sense, Toram online is not open world sandbox.
+        </p>
+
+        <hr class="dashed-rule">
+
+        <!-- Servers -->
+        <div>
+          <h5>Server</h5>
+          <p>
+            A server is a computer program or device that provides a service to another computer program and its user,
+            also known as the client. Every player connects to a server located at Asobimo Inc. (Toram Online). The
+            server
+            is responsible for managing the game and the players. Learn more about servers <a class='🔗' target='_blank'
+              href='https://en.wikipedia.org/wiki/Server_(computing)'>at Wikipedia</a>.
+          </p>
+          <p>
+            We are not sure how Asobimo Inc. hosts their servers, whether there are separate ones for International,
+            Japan, Global, English, etc.
+          </p>
+        </div>
+
+        <hr class="dashed-rule">
+
+        <!-- Worlds -->
+        <div>
+          <h5>World</h5>
+
+          <p>
+            A server is often sharded within itself to reduce load on its computing power. A world is a shard of a
+            server. (It means that the physical server is divided into multiple worlds, each with its own computing)
+          </p>
+
+          <p>
+            These are the worlds in the game :
+          </p>
+
+          <!-- 2 info cards for showing the servers -->
+          <div class="💪 🃏🃏">
+            <!-- Mobile Worlds -->
+            <div class="shadow info-cards small-font bg-light-orange">
+              <h4>Android/iOS</h4>
+              <ul>
+                <li>Global World 1</li>
+                <li>International World 1</li>
+                <li>International World 2</li>
+                <li>International World 3</li>
+                <li>Regional Language World 1</li>
+              </ul>
+            </div>
+            <!-- Desktop Worlds -->
+            <div class="shadow info-cards small-font bg-light-orange">
+              <h4>Desktop</h4>
+              <ul>
+                <li>Global World 2</li>
+                <li>International World 4</li>
+              </ul>
+            </div>
+          </div>
+
+          <p>
+            Depending on the availability of players in the world, the world may lag. However, reports of lag due to
+            server overload are rare. If the world capacity if full, then you cannot join the world. This is true if you
+            logged out and then the world becomes full. You cannot rejoin the world again if it filled up while you were
+            offline. <strong>This information is important because filled servers are much more likely to have a greater
+              number of players for trading and playing with.</strong>
+          </p>
+
+          <!-- Spoiler : Two players in different worlds -->
+          <div class="spoiler">
+            <label class="spl-btn" for="check8">
+              <input class="chkbox spl-open" type="checkbox" id="check8">
+              <div class="spoiler-head"> Two players in separate worlds: <i class="fas fa-chevron-down"></i></div>
+              <div class="spoiler-content">
+                <ul>
+                  <li><strong>Cannot invite each other in a party.</strong></li>
+                  <li>Cannot whisper to each other using chat.</li>
+                  <li>Cannot see the other's person in a Shout or Say Chat. (Refer to <a class='🔗'
+                      href='#chat'>Chat</a> to understand more about chat.)</li>
+                  <li>Cannot participate in the same Guild raid.</li>
+                  <li>Can message each other via mail.</li>
+                  <li>Can send gifts to each other.</li>
+                  <li>Can visit each other's housing areas.</li>
+                </ul>
+              </div>
+            </label>
           </div>
         </div>
+
+      </div>
+    </section>
+
+    <!--Chat-->
+    <section class="cards shadow chat" id="chat">
+      <h3>Chat</h3>
+
+      <!-- Tab links for different platforms -->
+      <div class="tab">
+        <button class="tablinks desktop">PC/Steam</button>
+        <button class="tablinks mobile">Android/iOS</button>
       </div>
 
-    </div>
+      <!-- Tab content -->
+      <!-- Content for desktop -->
+      <div class="tabcontent desktop">
+      </div>
 
+      <!-- Content for mobile -->
+      <div class="tabcontent mobile">
+        <!-- Insert placeholders -->
+        <div class="chat-placeholder">
+          <p>
+            <i class="fas fa-user"></i>
+            <span class="chat-name">Player Name</span>
+          </p>
+          <p>
+            <i class="fas fa-comment"></i>
+            <span class="chat-message">Message</span>
+          </p>
+        </div>
+
+    </section>
+
+    <!--Forums message-->
+
+    <!--Characters-->
+    <section class="cards shadow characters" id="characters">
+      <h3>Construction below this line</h3>
+      <div class="content">
+        <ul class="lists">
+          <li>Characters are separate experiences within the same account.</li>
+          <li>All your items, your username, achievements, emblems, Premium currency, and avatars(cosmetics) are shared
+            between all the characters.</li>
+          <li>The characters don't share levels.</li>
+          <li>More info on levels in 'Levels' section below.</li>
+          <li>If you want to start fresh, instead of creating a new account, create a new character. That keeps any
+            valuable items you have with you.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Ease of Playing-->
+    <section class="cards shadow ease" id="ease">
+      <h3>Ease of Playing</h3>
+      <div class="content">
+        <ul class="lists">
+          <li>There are a lot of things not mentioned in Toram's tutorial that makes your experience of Toram much much
+            easier. Here are some of them.</li>
+          <li>Remember when I said that selecting a mob causes the camera to lock onto it? If you don't like this, you
+            can change it using <br>「Menu」➡「Settings」➡「System」➡「Autofocus」➡「Off」. </li>
+          <li>If you want to run faster, you can go to <br>「Menu」➡「Settings」➡「System」➡「Dash」➡「On」.</li>
+          <li>If you don't like the annoying numbers that always pop up when you deal damage, go to
+            <br>「Menu」➡「Settings」➡「Graphics」➡「Damage Font Size」➡「(change slider)」.
+          </li>
+          <li>If you don't like the annoying spammers spamming in the 'SHOUT' section of the chat
+            <br>「Menu」➡「Settings」➡「Chat」➡「Chat Filtering Settings」➡「Toggle Shout」.
+          </li>
+          <li>If your phone can't handle Graphics, go to <br>「Menu」➡「Settings」➡「Graphics」and check out the settings.
+          </li>
+          <li>You can fiddle around with a lot of settings here, it would be really useful.</li>
+          <li>MENU -> Map -> World map are also helpful. The update in June 2021 has made it even easier to search and
+            teleport to places.</li>
+          <li>For Making the red AOE clearer go to 「Menu」➡「Settings」➡「Graphics」. Scroll down to bottom and find 「Atk
+            Warning Quality」and「Display Settings」.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Shortcuts-->
+    <section class="cards shadow shortcuts" id="shortcuts">
+      <h3>Shortcuts</h3>
+      <div class="content">
+        <ul class="lists">
+          <li>In「Menu」➡「Settings」➡「System」➡「Shortcuts」, the different sets are literally different sets of shortcuts,
+            for different situations. You cannot access a shortcut from set 2 if set 1 is enabled. </li>
+          <ul style="list-style-type: circle;">
+            <li>The list is also a shortcut menu. You can tap the top of the page where it says「Page 1 ⬅」 and go to next
+              page. Then tap the bottom "Shortcuts Off" to turn them on. </li>
+            <li>How to access this list? On the home screen, there is a literal button called 'LIST'. Tap the top to go
+              to next page, tap the bottom to close list.</li>
+          </ul>
+          <li>Tap on your name when on the Home screen. You can set up Auto Potion (you need to have potions in your
+            inventory and potions are not unlimited). You can also set up at what % of HP you want to consume the
+            potion. </li>
+          <li>Go to 「Menu」➡「Settings」➡「Guard/Evasion settings」➡「Set both to Manual A」. Those will be easier for you now.
+            Once you get more understanding of those, you can change them later.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Inventory-->
+    <section class="cards shadow" id="inventory">
+      <h3>Inventory</h3>
+      <div class="content">
+        <ul class="lists">
+          <li>You access your inventory by 「Menu」➡「Items」. Unlike most games, equipping a weapon/armor doesn't vanish it
+            from the inventory. </li>
+          <li>There are 50 inventory spaces, each can hold 99 items. A group of 99 items is called a stack. </li>
+          <ul style="list-style-type: circle;">
+            <li>Weapons and armor and additional gear and ring are non-stackable.</li>
+          </ul>
+          <li>You have a storage space, similar to a 'bank locker'. You can access it at any NPC store that has that
+            feature. Usually in Sofya City, El Scaro, and Hora Diomedea. (Unfamiliar names, yes, but soon they will be
+            familiar.)</li>
+          <ul>
+            <li>This also has storage space. For increasing storage space in bank you can use orbs.</li>
+            <li>One orb increases one storage space in personal inventory. (which you can move around)</li>
+            <li> <strong>One orb opens one inventory slot, but one orb opens 5 bank slots. Choose carefully.</strong>
+            </li>
+          </ul>
+          <li>When in your inventory, tap an item. On the left are options on what to do with that item. Tap the「1/2」
+            icon to open up more options on what to do with that item. </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Stats-->
+    <section class="cards shadow" id="stats">
+      <h3>Stats</h3>
+      <div class="content">
+        <p class="shifted-p">Early game, monsters are fairly easy, so it is recommended to add all stat points to boost
+          ATK/MATK. For now, you don't have to worry about VIT stat. Defense, MaxHp, and MaxMP can be gained from
+          equipments.
+          <br> <br> <strong>HIT and FLEE are useless,</strong> as of given date above. The game is very unbalanced with
+          respect to those. Monsters have unreasonably high HIT and FLEE compared to players. Don't try to increase
+          these.
+        </p>
+        <!--Accuracy question-->
+        <div class="othersite"
+          style=" color: black; border-color : #39A6A3; border-width :medium; border-style : dashed; border-radius: 2rem;">
+          'But how can I not miss if I don't increase Accuracy?'
+          <br>
+          <ul class="lists">
+            <li>Magic never misses, but can be guarded. It also cannot be evaded.</li>
+            <li>Criticals never miss either, but their damage fluctuates a lot if they graze. (If an attack was going to
+              miss but it was also critical, it will graze. Graze reduces stability.)</li>
+          </ul>
+        </div>
+
+        <!--Coryn Club-->
+        <div class="othersite coryn-club">
+          <h4>Coryn Club!</h4>
+          <p class="shifted-p">This site is the go to site for most of Toram Online Players for data.
+            There is a lot of info, but it is not an exhaustive list.
+            The below text is active, <u>click the ones</u> you are interested in.</p>
+
+          <!--Coryn Maths-->
+          <div class="Small-div-links coryn-child">
+            <a class="coryn-links" href="http://coryn.club/guide.php?key=status"></a>
+            <h5>The Mathz behind the statz!</h5>
+            <p class="shifted-p">
+              Use the sidebar in this website to navigate!!
+            </p>
+          </div>
+
+          <!--Coryn Items-->
+          <div class="Small-div-links coryn-child">
+            <a class="coryn-links" href="http://coryn.club/index.php"><span class="div-links"></span></a>
+            <<h5>
+              </h5>>What gear gives you what?</h5>
+              <p class="shifted-p">
+                On this site, scroll down the sidebar and use the feature called advanced search to find out what
+                equipment give what. Like, what gives MaxMP, etc. Please don't make a post just to
+                ask how to increase MaxMP or something. You are playing an MMORPG! You should learn those things by
+                searching for yourself.
+              </p>
+          </div>
+        </div>
+
+        <!--Tome of Offense-->
+        <div class="othersite Tome-of-Offense">
+          <a href="https://toramonline.com/index.php?threads/thexiiithguys-tome-of-offense.50196/"><span
+              class="div-links"></span></a>
+          <h4 style="color: #BB371A;">The Tome of Offense</h4>
+          <p class="shifted-p">
+            The XIIIth Guy was a user on Toram Online Forums Years ago.
+            <br> He and Mayan compiled a tome of offense and a tome of defense, the former of which is given here. <br>
+            Hail the Holy Tome!!
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Levels-->
+    <section class="cards shadow" id="levels">
+      <h3>Levels</h3>
+      <div class="content">
+        <ul class="lists">
+          <li>The current level cap is 230 as of the given above date.</li>
+          <li>Toram Online is a 2015 game, so obviously, most players are high level and most
+            events are aimed at level 150+ players. But, there are also events for all levels. You need not worry.</li>
+          <li>Money, (currency called spina) is currently earned by mass killing mobs with an AOE and selling the
+            materials (mats) to the NPC stores.
+            The good AOE skills unlock at level 70, and if you need boosts on those you need to be level 150+</li>
+          <li>If you don't want money and want to enjoy the game and the story normally while defeating mobs with hard
+            work, you can do that. However,
+            don't expect us to help you. That is because we already have a helping system in place by the name of
+            mercenaries. </li>
+          <li>Using「MENU」➡「Community」➡「Guild」➡「Mercinaries」or just simply friend mercenaries or even hired mercenaries,
+            you can easily fight bosses.
+            Furthermore, if a boss is hard, you need to exit (standing on exit for 10 seconds) and reenter in easy mode.
+          </li>
+          <li>That's why, if you chose to do story mode while having fun, (while I will help because I enjoy helping)
+            players will not help you and suggest you to put down your pride and do it in easy mode.
+            If you want to do story with hard work and the feeling of winning, you need to do it on your own (or get a
+            new player like you alongside)</li>
+          <li>Iv'e already told you why people want to level up to level 150, it's to get stronger to fight mobs to earn
+            spina.</li>
+        </ul>
+        <div class="level-div">
+          <h5>Do you Want to level up to 150 fast?</h5>
+          <p class="shifted-p">If you are a newbie, the fastest way to get to level 150 is to play story up to chapter 9
+            complete. You'll be at level 150 at the end of it. People will tell you to do the next chapters too.
+            No need to do that, level 150 is enough. Save it up for future when you need exp to reach a benchmark level
+            like 205 or 200.</p>
+
+          <div class="small-level-div">
+            <h5> <a href="https://toramonline.com/index.php?threads/general-leveling-guide.51846/">Text</a></h5>
+            -by Amaymon
+          </div>
+          <div class="small-level-div">
+            <h5><a href="https://www.youtube.com/watch?v=iEGoAVVSoMw">Video</a></h5>
+            -by Poi PoiiPoiii
+          </div>
+          <p class="shifted-p">If you already have a character at level 150, then the faster way is to get your
+            guildmates and do something called as Powerleveling. It is the most efficient way of leveling.
+            But you will need strong skills (tier 4 skills unlocked at level 150) to powerlevel fast. Your Guild will be
+            able to help much better. </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Skills-->
+    <section class="cards shadow" id="skills">
+      <h3>Skills</h3>
+      <div class="content">
+        <ul class="lists">
+          <li>Toram has a classless system meaning you can get skills from any skill tree.
+            The weapon you choose in Tutorial only determines which skill page you unlock first. </li>
+          <li>To upgrade skills you need to get skill pages. Those can be bought at the Sofya City library. Some pages
+            are in books that you can't find in the library. Those books have special skills.
+            Those can be purchased from other players or be won as prizes from treasure chests. (Complete chapter 2
+            lesson 1 to understand what those are.)'</li>
+          <li>Skill pages are divide into tiers. Tier 0 to 4.
+            <ul>
+              <li><strong>Most (NOT ALL)</strong> main weapon skill pages from tier 0 and 1 are unlocked at level 0</li>
+              <li>Tier 2 pages unlock at level 30</li>
+              <li>Tier 3 pages unlock at level 70</li>
+              <li>Tier 4 pages unlock at level 150</li>
+            </ul>
+          </li>
+          <li>Those levels are the levels of your highest leveled character. If you have a level 120 character and a
+            level 40 character, then even the level 40 character can use tier 3 skills.
+            If you then delete the level 120 character, then whatever pages you had purchased for the level 40 character
+            remain. But you cannot get new pages. </li>
+          <li>Tier 4 skills are the strongest and help you level your other characters faster and also farm faster.
+            Hence everyone keeps telling you to do story up to chapter 9 and to get to level 150.
+            If you want, you can enjoy the game at your own pace (It helps you learn combat skills and mechanics. I
+            recommend it) But you won't find many people around your level because, Toram is an old game. People are
+            already high level. </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Trading and Economy-->
+    <section class="cards shadow" id="trading">
+      <h3>Trading and Economy</h3>
+      <div class="content">
+        <ul class="lists">
+          <li>You can trade with other people by tapping on them and clicking trading.
+            You don't need to actually give them anything in trade, or even coins, though. You need to be able to see
+            them though.
+            <ul>
+              <li>As always, more options show up on list when you tap the top arrow. </li>
+            </ul>
+          </li>
+          <li>You can gift a friend, party member or a guild member from long distance. This is however only one item at
+            a time. You can also mail them over long distances, so they can see it when they come back online.</li>
+          <li>Sofya City, El Scaro and Hora Diomedea have Trading boards called consignment boards. You can register
+            your item there, and people will search for your item and buy it. However, the government taxes you. You can
+            even do cross - server
+            in
+            this method, but then there's an ADDITIONAL tax.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Orbs-->
+    <section class="cards shadow" id="orbs">
+      <h3>Orbs</h3>
+      <div class="content">
+        <ul class="lists">
+          <li>Orbs are the premium currency of Toram Online.</li>
+          <li>If you want to spend money on this game, you can spend your orbs however you want to.
+            Toram is not P2W anyway. There is nothing to 'win' either. </li>
+          <li>If you are an <strong>F2P player</strong>:</li>
+        </ul>
+      </div>
+
+      <!--Do not-->
+      <div class="Small-div-links Do-n-dont">
+        <h4>DO NOT <br> spend your orbs on:</h4>
+        <ul type="circle">
+          <li>Item chests</li>
+          <li>Avatar chests</li>
+          <li>EXP or Drop rate Books</li>
+          <li>Revival droplets</li>
+          <li>Teleport tickets</li>
+          <li>Gem lottery</li>
+        </ul>
+      </div>
+
+      <!--Do-->
+      <div class="Small-div-links Do-n-dont">
+        <h4>DO <br> spend your orbs on: <br> </h4>
+        <ul type="circle">
+          <li>More storage space in the NPC store.
+            Refer <a href="#Inventory">▶Inventory◀</a> for more info.</li>
+          <li>More Character Slots. <br>「Menu」➡「Character」➡「Switch Character」➡「Buy Character Slot」. </li>
+          <li>Rare deals like Guaranteed piercer/Ultimate/Glory Gem.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact me -->
+    <section id="contact" class="contact">
+      <div class="contact-desc">
+        <h4>Hi, I am the Brahmnic Boy,</h4>
+        <p> I am a Sophomore Computer Engineering Student. I also like to play video games, and helping people out, both
+          in academics and in video games. I thought that this website would be a good way to polish my skills and also
+          keep me excited for my favorite game.</p>
+
+        <p>In case you want to contribute to this guide, improve upon it, suggest a feature, or point out a mistake, you
+          can reach me by any of the following ways. Toram Online Forums or Discord would be the most ideal way to do
+          that.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="grid-item"><a href=""><i class="fab fa-3x fa-discord"></i></a></div>
+        <div class="grid-item"><a href=""><i class="fab fa-3x fa-reddit"></i></a> </div>
+        <div class="grid-item"><a href=""><i class="fas fa-3x fa-envelope"></i></a></div>
+        <div class="grid-item"><a href=""><i class="fab fa-3x fa-github"></i></a></div>
+        <div class="grid-item"><a href=""><i class="fas fa-3x fa-users"></i></a></div>
+        <div class="grid-item"><a href=""><i class="fab fa-3x fa-linkedin"></i></a></div>
+      </div>
+    </section>
   </section>
+  <!-- Main Content Ends -->
+
+  <!-- Utility div to see if we are in mobile view or not -->
+  <div class="mobile-indicator">
+  </div>
+
+  <!-- Script tag for jquery and Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
 
 </body>
 

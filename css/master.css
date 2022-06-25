@@ -1,289 +1,619 @@
+/* Fonts
+  font-family: 'Comfortaa', cursive; 500 700
+  font-family: 'Work Sans', sans-serif; 300 400 500 600 700 800
+*/
+
+/* Root */
+
+/* Dark theme colors */
+html[data-theme="dark"] {
+  --light: #2b1f31;
+  --medium: #413d65;
+  --semi-dark: #5fb9b0;
+  --dark: #bef992;
+  --cards: #201924;
+  --text: #d5f2bf;
+  --anchor-btn: #4e5c73;
+  --anchor-btn-hvr: #2d323a;
+  --shadow: rgba(0, 0, 0, 0.72);
+  --spoiler-head: var(--medium);
+  --light-orange: #806A40;
+}
+
+/* Light theme colorss */
+html[data-theme="light"] {
+  --light: #bef992;
+  --medium: #5fb9b0;
+  --semi-dark: #413d65;
+  --dark: #2b1f31;
+  --cards: #d5f2bf;
+  --text: #2b1f31;
+  --anchor-btn: #2d323a;
+  --anchor-btn-hvr: #4e5c73;
+  --shadow: rgba(0, 0, 0, 0.72);
+  --spoiler-head: #b2da75;
+  --light-orange: #FFD580;
+}
+
+/* Colors */
+
+.bg-light-orange {
+  background-color: var(--light-orange) !important;
+}
+
+/* Elements */
+
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
 }
 
 body {
   margin: 0;
-  background-color: #EEEEEE;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.25rem;
 }
 
-/* FONTS USED
-font-family: 'Comfortaa', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
+.background-squares {
+  background-attachment: fixed;
+}
 
-/*General Elements*/
+/* The wrapper class that allows us to shrink the content when the sidebar is opened. */
+.main {
+  background: inherit;
+  color: var(--text);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  font: 400 1.25rem "Work Sans", sans-serif;
+  line-height: 1.5;
+  transition: 0.5s;
+}
+
 h1 {
-  color: #76EAD7;
-  font-family: 'Poppins', sans-serif;
-  font-size: 5rem;
-  margin: 0 0 2rem 0;
-}
-
-h2 {
-  color: #EEEEEE;
-  font-family: 'Dancing Script', cursive;
-  font-size: 3rem;
-  margin: 0;
+  display: block;
+  font: 500 5rem "Comfortaa", cursive;
 }
 
 h3 {
-  font-family: 'Comfortaa', cursive;
-  margin: 1rem;
-  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  font: 700 1.75rem "Comfortaa", cursive;
 }
 
 h4 {
-  font-family: 'Montserrat', cursive;
-  margin: 1rem;
-  font-size: 2rem;
+  margin: 0.5rem 0;
+  font: 500 1.6rem "Comfortaa", cursive;
 }
 
 h5 {
-  font-family: 'Montserrat', cursive;
-  margin: 1rem;
-  font-size: 1.5rem;
-  font-weight: bolder;
+  margin: 0.5rem 0;
+  font: 700 1.4rem "Comfortaa", cursive;
+  /* Underline with offset */
+  text-decoration: underline;
+  text-underline-offset: 0.1em;
 }
 
-p {
- font-size: 1.5rem;
- display: inline-block;
-  line-height: 1.5rem;
+h6 {
+  margin: 0.5rem 0;
+  font: 300 1rem "Work Sans", cursive;
 }
 
-.shifted-p {
-  margin-left: 1rem;
+hr {
+  border: none;
+  opacity: 0.25;
 }
 
-/*anchor*/
-a {
-  text-decoration: none;
-  color: black;
+button {
+  border: none;
 }
-
-  a:visited {
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: none;
-    color: #7952B3;
-    font-weight: bold;
-  }
-/*anchor -end*/
 
 ul {
-  list-style-position: outside;
+  list-style-position: inside;
+  padding-left: 0;
 }
 
-li {
-  padding: 5px;
-}
-/*General Elements -end*/
 
-/*Site flow start*/
-
-/*FUTURE
-.intro-img-container {
-  width:100vw;
-  height:auto;
+/* Reusable */
+.shadow {
+  box-shadow: 0px 0px 8px var(--shadow);
+  border-radius: 5px;
 }
 
-.intro-img {
-  width: 100%;
-  padding: 0;
-  height:auto;
-}
-*/
-
-.whitespacer {
-  padding: 3% 10% 3% 10%;
-}
-
-.title-card {
-  background-color: #393E46;
-  padding: 5rem 5rem 5rem 7rem;
-}
-
-.punchy {
-  color: #686D76;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  display: inline-block;
-  position: absolute;
-  right: 3%;
-}
-
-.Introduction {
-  text-align: left;
-  margin: 5rem auto 5rem 7rem;
-  width: 70%;
+.dashed-rule {
+  border-top: dashed;
+  width: 50%;
+  margin: 2rem auto;
 }
 
 .cards {
-  padding: 2rem 2rem 2rem 7rem;
-}
-
-.content {
-  width: 80%;
-}
-
-/*Specific divs*/
-
-.greens {
-    background-color: #C4FB6D;
-}
-
-.blues {
-    background-color: #76EAD7;
-}
-
-.whites {
-    background-color: #EEEEEE;
-}
-
-/**FORUM BUTTON**/
-.Forum-button {
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   color: #76EAD7;
-   font-size: 1.3em;
-   font-weight: 100;
-   padding: 1em;
-   background-color: #393E46;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center;
-}
-
-.Forum-button:hover {
-   background-color: #393E46;
-   color: #76EAD7;
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   text-decoration: none;
-}
-/**FORUM BUTTON**/
-
-.othersite {
-  color: #EEEEEE;
-  margin: 1rem 0 0 2rem;
-  border-radius: 1rem;
-  display: block;
   padding: 2rem;
+  width: 90%;
+  margin: 1rem 0;
+  background-color: var(--cards);
+  /* Allows width to INCLUDE padding */
+  box-sizing: border-box;
 }
 
-.coryn-club {
-  background-color: #006990;
-}
-
-.Small-div-links {
-  display: inline-block;
-  margin: 1rem;
-  border-radius: 2rem;
-  padding: 1.5rem;
-}
-
-/***** FOR LEVELS child divs *******/
-.level-div{
-  background-color: #CDF0EA;
-  margin: 1rem 0 0 2rem;
-  border-radius: 1rem;
-  display: block;
-  padding: 2rem;
-  line-height: 1.5rem;
-}
-
-.small-level-div{
-  background-color: #F6C6EA;
-  display: inline-block;
-  border-style: solid;
-  border-width: thin;
-  margin: 1rem;
-  border-radius: 2rem;
-  padding: 2rem;
-}
-
-/************ Footer ********/
-
-#contact {
-  background-color: #082032;
-  color: white;
-  padding: 3% 10% 0 10%;
-
-}
-
-.contact-links {
-  color:#2C394B;
-}
-
-.contact-links:hover{
-  color:#334756;
-}
-
-.coryn-child {
-  background-color: #BD2000;
-  position: relative;
-  box-shadow: 3px 3px 0 #630000;
-}
-
-.author-name {
-  padding: 5%;
-}
-
-.Tome-of-Offense {
-  background-color: #EBA83A;
-  position: relative;
-  box-shadow: 3px 3px 0 #9C6F25;
-  color: #362222;
-}
-
-.Spina-link{
-  background-color: #897853;
-  position: relative;
-  color: #4E3620;
-}
-
-.Spina-link a:hover {
-  color: white;
-  transition-timing-function: ease-in;
-  transition-duration: 0.25s;
-}
-
-.Do-n-dont{
-  background-color: #AAD8D3;
-  display:inline-block;
+.info-cards {
   width: 40%;
+  /* Allows width to INCLUDE padding */
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
 }
 
-.div-links {
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: 1;
+.small-font {
+  font-size: 1rem;
 }
 
-.Reddit-icon {
-  height: 4rem;
-  width: 4rem;
-  display:inline-block;
+.small-font>h4 {
+  font-size: 1.2rem;
 }
 
-.Reddit-prompt {
-  width: auto;
-  height: auto;
-  margin: 1rem 1rem 0 1rem;
+.mobile-indicator {
+  display: none;
+}
+
+.💪 {
+  display: flex;
+}
+
+.🃏🃏 {
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.btn-container {
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.🔗 {
   display: inline-block;
-  position: relative;
-  top: 50%;transform: translateY(-30%);
+  text-decoration: none;
+  border-radius: 0.3rem;
+  padding: 0.15rem 0.3rem;
+  margin: 0.1rem 0;
+  font-size: 1rem;
+  background: var(--anchor-btn);
+  color: white;
+}
+
+.🔗:hover {
+  background: var(--anchor-btn-hvr);
+  color: white;
+}
+
+.👈 {
+  float: left;
+  margin: 0 1rem 0.75rem 0.75rem;
+}
+
+.👉 {
+  float: right;
+  margin: 0 0.75rem 0.75rem 1rem;
+}
+
+.images {
+  width: 270px;
+  height: auto;
+}
+
+/* Full wide images with margin : 0 */
+.images-full {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/* images that take up only 50% on PC */
+.screenwide-ss {
+  width: 50%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* Make screenwide-ss 100% on Mobile */
+@media screen and (max-width: 600px) {
+  .screenwide-ss {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .info-cards {
+    width: 100%;
+  }
+}
+
+/* Pseudo Bootstrap Classes */
+.p-2 {
+  padding: 0.5rem;
+}
+
+/* Tabs */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border-bottom: 2px solid var(--medium);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  font: 400 0.8rem "Work Sans", sans-serif;
+  background-color: inherit;
+  border-radius: 5px 5px 0 0;
+  color: var(--semi-dark);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--light);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--medium);
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+/* Spoiler */
+
+.spl-btn {
+  cursor: pointer;
+}
+
+.spoiler {
+  margin: 1rem 0;
+}
+
+.spoiler-head {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.72);
+  background-color: var(--spoiler-head);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.spoiler-content {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  background-color: var(--light);
+  border-radius: 0 0 5px 5px;
+  display: none;
+  padding: 1rem 1.5rem;
+  overflow-y: hidden;
+}
+
+.fa-chevron-down {
+  transform: translateY(15%);
+}
+
+/* Scrollbar, only works for webkit */
+
+body::-webkit-scrollbar {
+  width: auto;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--medium);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--semi-dark);
+  border: 3px solid var(--medium);
+  border-radius: 18px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--dark);
+}
+
+/*Site flow start*/
+
+/* Hero */
+
+.hero {
+  background: inherit;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Frosted Glass thing */
+.hero:before {
+  background: inherit;
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  filter: blur(10px);
+}
+
+/* Container on top of frost */
+.hero-onfrost {
+  display: flex;
+  flex-flow: column wrap;
+  /* Centers vertically */
+  justify-content: center;
+  /* Centers horizontally */
+  text-align: center;
+  color: var(--semi-dark);
+  position: absolute;
+  height: inherit;
+  width: inherit;
+}
+
+.hero-txt {
+  font-size: 5.5rem;
+}
+
+.hero-subtxt {
+  font-size: 1.6rem;
+}
+
+/* Last Updated */
+.last-date {
+  color: var(--dark);
+  margin: 0;
+  font: 400 1.2rem "Work Sans", sans-serif;
+}
+
+/* Navbar */
+
+/* Navigation toggler button */
+.nav-btn {
+  cursor: pointer;
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 45px;
+  z-index: 2;
+}
+
+.nav-btn-lines {
+  background: var(--semi-dark);
+  border-radius: 10px;
+  height: 5px;
+  margin: 5px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  z-index: 2;
+}
+
+.nav-btn-lines:nth-of-type(1) {
+  width: 50%;
+}
+
+.nav-btn-lines:nth-of-type(2) {
+  width: 100%;
+}
+
+.nav-btn-lines:nth-of-type(3) {
+  width: 60%;
+}
+
+.chkbox[type="checkbox"] {
+  display: none;
+}
+
+.nav-open[type="checkbox"]:checked~.nav-btn-lines:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(8px, 0px);
+}
+
+.nav-open[type="checkbox"]:checked~.nav-btn-lines:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg);
+}
+
+.nav-open[type="checkbox"]:checked~.nav-btn-lines:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(21px, -9px) rotatez(45deg);
+}
+
+/* The side navigation menu */
+.sidenav {
+  /* This line to ensure that the sidenav is scrollable */
+  height: calc(100% - 10rem);
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with checked */
+
+  /* Buttons to center */
+  text-align: center;
+
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  /* Stay at the left */
+
+  background-color: var(--light);
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  overflow-y: scroll;
+  /* Allow vertical scroll */
+  padding: 5rem 0;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Toggle icon for Dark/Light mode */
+.toggle-icon {
+  color: var(--semi-dark);
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.5rem;
+  cursor: pointer;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 10px;
+  text-decoration: none;
+  font: 500 1.2rem "Work Sans", sans-serif;
+  color: var(--semi-dark);
+  display: block;
+  transition: 0.5s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: var(--light);
+  background-color: var(--semi-dark);
+}
+
+/* Introduction */
+.introduction {
+  margin-top: 1rem;
+}
+
+/* App Download buttons */
+
+.installer-links {
+  color: var(--light);
+  background-color: var(--dark);
+  border-radius: 17px;
+  font-size: 1.5rem;
+  padding: 0.7em 1em;
+  margin: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.installer-links:hover {
+  background-color: var(--semi-dark);
+  color: whitesmoke;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+/* Create a div for story */
+.story {
+  margin: 1rem auto;
+  background: url(../images/Story_mode_card_img.png);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/Story_mode_card_img.png), no-repeat;
+  /* Allows width to INCLUDE padding */
+  box-sizing: border-box;
+  /* Offset background image to center */
+  background-position: center;
+  /* Fit width to background image */
+  background-size: cover;
+}
+
+.story-btn {
+  color: #ffffff;
+  background-color: #80709b;
+  border-radius: 17px;
+  font-size: 1rem;
+  padding: 0.7em 1em;
+  text-decoration: none;
+  cursor: pointer;
+  /* Give moderate shadow */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  /* Make font Work sans */
+  font-family: "Work Sans", sans-serif;
+}
+
+.story-btn:hover {
+  background-color: #a48b54;
+  color: #ffffff;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+
+/* Site flow end */
+
+.contact {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.72);
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-desc {
+  padding: 3rem;
+  width: 50%;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 5rem);
+  grid-template-rows: repeat(2, 5rem);
+  grid-gap: 2rem;
+  margin: 3rem;
+}
+
+.grid-item>a:visited {
+  color: white;
+}
+
+.grid-item>a:hover {
+  color: gray;
+}
+
+.grid-item>a>i:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 767px) {
+  .main {
+    font-size: 1.1rem;
+  }
+
+  .mobile-indicator {
+    display: block;
+  }
+
+  .cards {
+    margin: 1px 0;
+    padding: 2rem 1.5rem;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  html {
+    scroll-padding-top: 0;
+  }
+
+  .contact-desc {
+    width: 90%;
+  }
 }
