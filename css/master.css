@@ -17,6 +17,7 @@ html[data-theme="dark"] {
   --anchor-btn-hvr: #2d323a;
   --shadow: rgba(0, 0, 0, 0.72);
   --spoiler-head: var(--medium);
+  --light-orange: #806A40;
 }
 
 /* Light theme colorss */
@@ -31,6 +32,13 @@ html[data-theme="light"] {
   --anchor-btn-hvr: #4e5c73;
   --shadow: rgba(0, 0, 0, 0.72);
   --spoiler-head: #b2da75;
+  --light-orange: #FFD580;
+}
+
+/* Colors */
+
+.bg-light-orange {
+  background-color: var(--light-orange) !important;
 }
 
 /* Elements */
@@ -42,7 +50,9 @@ html {
 
 body {
   margin: 0;
-  background: url(../images/protruding-squares.svg);
+}
+
+.background-squares {
   background-attachment: fixed;
 }
 
@@ -95,6 +105,12 @@ button {
   border: none;
 }
 
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+
 /* Reusable */
 .shadow {
   box-shadow: 0px 0px 8px var(--shadow);
@@ -116,12 +132,34 @@ button {
   box-sizing: border-box;
 }
 
+.info-cards {
+  width: 40%;
+  /* Allows width to INCLUDE padding */
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+}
+
+.small-font {
+  font-size: 1rem;
+}
+
+.small-font>h4 {
+  font-size: 1.2rem;
+}
+
 .mobile-indicator {
   display: none;
 }
 
 .💪 {
   display: flex;
+}
+
+.🃏🃏 {
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .btn-container {
@@ -178,6 +216,10 @@ button {
   .screenwide-ss {
     width: 100%;
     margin: 0.5rem 0;
+  }
+
+  .info-cards {
+    width: 100%;
   }
 }
 
@@ -510,6 +552,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition-duration: 0.3s;
   transition-timing-function: linear;
 }
+
 
 /* Site flow end */
 

@@ -24,7 +24,7 @@
   <title>Brahmnic's Guide for Toram</title>
 </head>
 
-<body>
+<body class="background-squares">
 
   <!-- Navigation Panel -->
   <!-- Side Navbar Button -->
@@ -114,7 +114,7 @@
       <p>If you are underage, you may have to read <a class="🔗" href="http://en.toram.jp/outline/manner/">Another
           policy</a>.</p>
 
-      <!-- Spoiler for Data Transfer -->
+      <!-- Spoiler : Data Transfer -->
       <div class="spoiler">
         <label class="spl-btn" for="check2">
           <input class="chkbox spl-open" type="checkbox" id="check2">
@@ -134,7 +134,7 @@
         </label>
       </div>
 
-      <!-- Spoiler for installation issues -->
+      <!-- Spoiler : Issues -->
       <div class="spoiler">
         <label class="spl-btn" for="check3">
           <input class="chkbox spl-open" type="checkbox" id="check3">
@@ -189,7 +189,7 @@
           Please be patient and do not make a redundant Reddit post/Forum Thread.
         </p>
 
-        <!-- Spoiler for Character creator explanation -->
+        <!-- Spoiler : Character Creator -->
         <div class="spoiler">
           <label class="spl-btn" for="check4">
             <input class="chkbox spl-open" type="checkbox" id="check4">
@@ -234,7 +234,7 @@
             </div>
         </div>
 
-        <!-- Spoiler for Weapon Selection explanation -->
+        <!-- Spoiler : Weapon Selection -->
         <div class="spoiler">
           <label class="spl-btn" for="check5">
             <input class="chkbox spl-open" type="checkbox" id="check5">
@@ -260,15 +260,15 @@
 
               <p>
                 Don't be fooled by Asobimo's descriptions for weapons. The weapons are not labelled properly based on
-                their difficulty for a newbie. A more accurate list would be :
+                their difficulty for a newbie. A more accurate list would be : </p>
+              <ul>
                 <li>Staff : Easy </li>
                 <li>Katana : Normal </li>
                 <li>Knuckle : Easy for tank, Hard for DPS</li>
                 <li>Sword : Normal</li>
                 <li>Halberd: Hard</li>
                 <li>Bow : Easy</li>
-              </p>
-
+              </ul>
               <p>
                 There are actually more weapons than those, and different combinations of weapons. Hence, such a
                 superficial description is actually really misleading. There is also the divide between tanking and
@@ -293,29 +293,35 @@
           </label>
         </div>
 
-        <div class="p-2">
-          <img class="👉 screenwide-ss" src="images\npc-dialogue.jpg" alt="Image explaining Dialogue">
-          <p>
-            The tutorial demonstrates that your character doesn't have any specific lines. All lines are said by NPCs.
-            Sometimes the NPCs act as if you have spoken something to them, even if you haven't. The game simply assumes
-            that you as the player must have asked something aloud in your room.
-          </p>
-          <p>
-            There are some instances in the story (pictured) where you can choose different options, but trust me, none
-            of
-            them affect the story's progress or direction.
-          </p>
+        <!-- Spoiler : Dialogue -->
+        <div class="spoiler">
+          <label class="spl-btn" for="check4.5">
+            <input class="chkbox spl-open" type="checkbox" id="check4.5">
+            <div class="spoiler-head"> Dialogue <i class="fas fa-chevron-down"></i></div>
+            <div class="spoiler-content">
+
+              <img class="👉 screenwide-ss" src="images\npc-dialogue.jpg" alt="Image explaining Dialogue">
+              <p>
+                The tutorial demonstrates that your character doesn't have any specific lines. All lines are said by
+                NPCs. Sometimes the NPCs act as if you have spoken something to them, even if you haven't. The game
+                simply assumes that you as the player must have asked something aloud in your room.
+              </p>
+              <p>
+                There are some instances in the story (pictured) where you can choose different options, but trust me,
+                none of them affect the story's progress or direction.
+              </p>
+              <img class="👈 screenwide-ss" src="images\npc-dialogue-2.jpg" alt="Image explaining Dialogue">
+              <p>
+                Just like these options, which are fake. You cannot skip the tutorial.
+              </p>
+              <span>In case you miss any dialogue, you can access it from the chat window too.</span> <br>
+              <img class="images" src="images\npc-dialogue-chat.png" alt="NPC Dialogue shows up in the Chat window.">
+
+            </div>
+          </label>
         </div>
 
-
-        <img class="👈 screenwide-ss" src="images\npc-dialogue-2.jpg" alt="Image explaining Dialogue">
-        <p>
-          Just like these options, which are fake. You cannot skip the tutorial.
-        </p>
-        <span>In case you miss any dialogue, you can access it from the chat window too.</span> <br>
-        <img class="images" src="images\npc-dialogue-chat.png" alt="NPC Dialogue shows up in the Chat window.">
-
-        <!-- Spoiler for explaining elements on the screen -->
+        <!-- Spoiler : Elements on the screen -->
         <div class="spoiler">
           <label class="spl-btn" for="check6">
             <input class="chkbox spl-open" type="checkbox" id="check6">
@@ -326,7 +332,7 @@
                 Online. There are certain instances when parts of these can change based on the activity you are
                 performing.
               </p>
-              <!-- Image to show screen, floating left -->
+              <!-- Image to show screen -->
               <img class="images-full" src="images\en_toram_pc_screen_elements_.jpg"
                 alt="Image explaining elements on the screen">
 
@@ -380,62 +386,80 @@
           </label>
         </div>
 
-        <img class="👈 images" src="images\still_press_f.png" alt="The monster select key is still the F key.">
-        <p>
-          When you get further in the tutorial, you will see more actions.
-          This is a mistake by Asobimo. You still have to use the 'F' key.
-        </p>
-        <p>
-          <i class="fas fa-lightbulb"></i> Tip: Killing all the mobs will get you to level 8.
-        </p>
-        <p>
-          <strong>Note : </strong> Don't try to solo the 'Pico' monster. It is not a monster you can defeat at your
-          current level. You will waste a lot of time trying to do so.
-        </p>
+        <!-- Explaining the F key error -->
+        <div>
+          <img class="👈 images" src="images\still_press_f.png" alt="The monster select key is still the F key.">
+          <p>
+            When you get further in the tutorial, you will see more actions.
+            This is a mistake by Asobimo. You still have to use the 'F' key.
+          </p>
+          <p>
+            <i class="fas fa-lightbulb"></i> Tip: Killing all the mobs will get you to level 8.
+          </p>
+          <p>
+            <strong>Note : </strong> Don't try to solo the 'Pico' monster. It is not a monster you can defeat at your
+            current level. You will waste a lot of time trying to do so.
+          </p>
+        </div>
 
-        <h5>Aggro</h5>
-        <!-- Image floating right explaining aggro -->
-        <img class="screenwide-ss 👉" src="images\aggro.png" alt="Image explaining aggro">
-        <p>
-          <li>Monsters will attack you if they are aggro'ed on you. Aggro is a state that is set when a monster is
-            disturbed, either by a player, a pet, an NPC. A monster with a higher level than you has a chance that it
-            will
-            attack you if you are within a certain distance of it.
-          <li>Monsters aggro'ed on you are indicated by an arrow as shown. Monsters aggro'ed on you try to attack you
-            until
-            you are dead, they are dead, you are 24 meters or more away, or another party member generated more aggro
-            than
-            you.
-          <li>Bosses don't follow the 24 m rule, and will pursue you until one of you dies. Minibosses will stop
-            attacking
-            if you go a considerable distance away from where they spawned.
-          <li>All aggro is reset if you change the map. Learn more about aggro mechanics at the <a class='🔗'
-              href='#aggro'>Aggro</a> section.
-        </p>
+        <hr class="dashed-rule">
 
-        <h5>Combat is not Automated!</h5>
-        <p>
-          Toram Online tutorial says that Combat is automated. This is only partially true. Pressing the action button
-          once selects the nearest mob and switches the camera to it. Pressing it again makes your character
-          continuously Normal attack it until it dies, after that, your character sheathes your weapon.
-        </p>
-        <p>
-          The normal attacks are the only things automated in combat. You cannot automatically switch to a different
-          mob. You either press the action button to select the nearest mob or if you want to fight a specific faraway
-          mob, click on that mob. You can press TAB to see a list of all mobs and players on the map.
-        </p>
-        <p>
-          Normal attacks deal pathetically low amounts of damage once you reach level 50 or above. (Even at level 25-30
-          they are weak). The main damage dealing concept in Toram Online are <a class='🔗' href='#skills'>Skills</a> ,
-          specifically attacking skills. Those are NOT AUTOMATED and require you to focus to use skills at the right
-          time in the right order or to know when to stop using skills and dodge.
-        </p>
-        <p>
-          Therefore, <strong>COMBAT IN TORAM ONLINE IS NOT AUTOMATED AND REQUIRES A LOT OF WORK</strong> . If you favor
-          automated combat, Toram is not for you.
-        </p>
+        <!-- Explaining a little about Aggro -->
+        <div>
+          <h5>Aggro</h5>
+          <!-- Image floating right explaining aggro -->
+          <img class="screenwide-ss 👉" src="images\aggro.png" alt="Image explaining aggro">
+          <p>
+          <ul>
+            <li>Monsters will attack you if they are aggro'ed on you. Aggro is a state that is set when a monster is
+              disturbed, either by a player, a pet, an NPC. A monster with a higher level than you has a chance that it
+              will
+              attack you if you are within a certain distance of it.
+            <li>Monsters aggro'ed on you are indicated by an arrow as shown. Monsters aggro'ed on you try to attack you
+              until
+              you are dead, they are dead, you are 24 meters or more away, or another party member generated more aggro
+              than
+              you.
+            <li>Bosses don't follow the 24 m rule, and will pursue you until one of you dies. Minibosses will stop
+              attacking
+              if you go a considerable distance away from where they spawned.
+            <li>All aggro is reset if you change the map. Learn more about aggro mechanics at the <a class='🔗'
+                href='#aggro'>Aggro</a> section.
+          </ul>
+          </p>
+        </div>
 
-        <!-- Spoiler for the Dragon Battle -->
+        <hr class="dashed-rule">
+
+        <!-- Combat in Toram online is not automated -->
+        <div>
+          <h5>Combat is not Automated!</h5>
+          <p>
+            Toram Online tutorial says that Combat is automated. This is only partially true. Pressing the action button
+            once selects the nearest mob and switches the camera to it. Pressing it again makes your character
+            continuously Normal attack it until it dies, after that, your character sheathes your weapon.
+          </p>
+          <p>
+            The normal attacks are the only things automated in combat. You cannot automatically switch to a different
+            mob. You either press the action button to select the nearest mob or if you want to fight a specific faraway
+            mob, click on that mob. You can press TAB to see a list of all mobs and players on the map.
+          </p>
+          <p>
+            Normal attacks deal pathetically low amounts of damage once you reach level 50 or above. (Even at level
+            25-30
+            they are weak). The main damage dealing concept in Toram Online are <a class='🔗' href='#skills'>Skills</a>
+            ,
+            specifically attacking skills. Those are NOT AUTOMATED and require you to focus to use skills at the right
+            time in the right order or to know when to stop using skills and dodge.
+          </p>
+          <p>
+            Therefore, <strong>COMBAT IN TORAM ONLINE IS NOT AUTOMATED AND REQUIRES A LOT OF WORK</strong> . If you
+            favor
+            automated combat, Toram is not for you.
+          </p>
+        </div>
+
+        <!-- Spoiler : The Dragon Battle -->
         <div class="spoiler">
           <label class="spl-btn" for="check7">
             <input class="chkbox spl-open" type="checkbox" id="check7">
@@ -447,7 +471,9 @@
               </p>
 
               <p>
-                The reward you get for the dragon battle is A Proof of Resistance ring, which is useless.
+                The reward you get for the dragon battle is <a class='🔗' target='_blank'
+                  href='https://coryn.club/item.php?name=proof+of+resistance'>Proof of Resistance</a> ring, which is
+                useless.
               </p>
 
               <!-- Float left screenwide ss -->
@@ -471,6 +497,7 @@
           This concludes the tutorial. You can now start playing the game.
         </p>
 
+        <hr class="dashed-rule">
         <!-- Advertisement div that shares another site having more info on story mode -->
         <div class="cards shadow story">
           <h4 style="color: whitesmoke;">Want to know more about the story mode?</h4>
@@ -493,41 +520,139 @@
 
     </section>
 
+    <!-- Servers -->
+    <section class="cards shadow servers" id="servers">
+      <h3>Channels, Servers and Worlds</h3>
+      <div class="content">
+        <p>
+          Toram Online is a multiplayer game. Unlike Albion Online, the game does not run on a single server where each
+          logged in player can see every other logged in player. In that sense, Toram online is not open world sandbox.
+        </p>
+
+        <hr class="dashed-rule">
+
+        <!-- Servers -->
+        <div>
+          <h5>Server</h5>
+          <p>
+            A server is a computer program or device that provides a service to another computer program and its user,
+            also known as the client. Every player connects to a server located at Asobimo Inc. (Toram Online). The
+            server
+            is responsible for managing the game and the players. Learn more about servers <a class='🔗' target='_blank'
+              href='https://en.wikipedia.org/wiki/Server_(computing)'>at Wikipedia</a>.
+          </p>
+          <p>
+            We are not sure how Asobimo Inc. hosts their servers, whether there are separate ones for International,
+            Japan, Global, English, etc.
+          </p>
+        </div>
+
+        <hr class="dashed-rule">
+
+        <!-- Worlds -->
+        <div>
+          <h5>World</h5>
+
+          <p>
+            A server is often sharded within itself to reduce load on its computing power. A world is a shard of a
+            server. (It means that the physical server is divided into multiple worlds, each with its own computing)
+          </p>
+
+          <p>
+            These are the worlds in the game :
+          </p>
+
+          <!-- 2 info cards for showing the servers -->
+          <div class="💪 🃏🃏">
+            <!-- Mobile Worlds -->
+            <div class="shadow info-cards small-font bg-light-orange">
+              <h4>Android/iOS</h4>
+              <ul>
+                <li>Global World 1</li>
+                <li>International World 1</li>
+                <li>International World 2</li>
+                <li>International World 3</li>
+                <li>Regional Language World 1</li>
+              </ul>
+            </div>
+            <!-- Desktop Worlds -->
+            <div class="shadow info-cards small-font bg-light-orange">
+              <h4>Desktop</h4>
+              <ul>
+                <li>Global World 2</li>
+                <li>International World 4</li>
+              </ul>
+            </div>
+          </div>
+
+          <p>
+            Depending on the availability of players in the world, the world may lag. However, reports of lag due to
+            server overload are rare. If the world capacity if full, then you cannot join the world. This is true if you
+            logged out and then the world becomes full. You cannot rejoin the world again if it filled up while you were
+            offline. <strong>This information is important because filled servers are much more likely to have a greater
+              number of players for trading and playing with.</strong>
+          </p>
+
+          <!-- Spoiler : Two players in different worlds -->
+          <div class="spoiler">
+            <label class="spl-btn" for="check8">
+              <input class="chkbox spl-open" type="checkbox" id="check8">
+              <div class="spoiler-head"> Two players in separate worlds: <i class="fas fa-chevron-down"></i></div>
+              <div class="spoiler-content">
+                <ul>
+                  <li><strong>Cannot invite each other in a party.</strong></li>
+                  <li>Cannot whisper to each other using chat.</li>
+                  <li>Cannot see the other's person in a Shout or Say Chat. (Refer to <a class='🔗'
+                      href='#chat'>Chat</a> to understand more about chat.)</li>
+                  <li>Cannot participate in the same Guild raid.</li>
+                  <li>Can message each other via mail.</li>
+                  <li>Can send gifts to each other.</li>
+                  <li>Can visit each other's housing areas.</li>
+                </ul>
+              </div>
+            </label>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!--Chat-->
     <section class="cards shadow chat" id="chat">
       <h3>Chat</h3>
-      <strong>Say</strong> - To speak to all people on that map on your channel. The channel number is given in the
-      right-hand bottom corner.
-      Channel number can be changed by
-      「MENU」➡「TERMINAL」➡「Switch Channel」.
-      <br> <strong>Shout</strong> - To speak to all people on that map on all channels on your server.
-      The server can be changed by
-      「MENU」➡「TERMINAL」➡「Switch Channel」➡ 「Switch world」.
-      Switching worlds removes you from a party.
-      <br> <strong>Party</strong> - To speak to the 3 members of your party.
-      <br> <strong>Guild</strong> - To speak to your guild.
-      <br> <strong>World</strong> - This feature is unavailable as of the given date above.
+
+      <!-- Tab links for different platforms -->
+      <div class="tab">
+        <button class="tablinks desktop">PC/Steam</button>
+        <button class="tablinks mobile">Android/iOS</button>
+      </div>
+
+      <!-- Tab content -->
+      <!-- Content for desktop -->
+      <div class="tabcontent desktop">
+      </div>
+
+      <!-- Content for mobile -->
+      <div class="tabcontent mobile">
+        <!-- Insert placeholders -->
+        <div class="chat-placeholder">
+          <p>
+            <i class="fas fa-user"></i>
+            <span class="chat-name">Player Name</span>
+          </p>
+          <p>
+            <i class="fas fa-comment"></i>
+            <span class="chat-message">Message</span>
+          </p>
+        </div>
+
     </section>
 
     <!--Forums message-->
-    <section class="cards shadow forums" id="forums">
-      <h3>Have you joined the Unofficial Toram Online Forums?</h3>
-      <div class="content" style="text-align:center;">
-        <a href="https://toramonline.com/index.php" class="Forum-button">If not, check it out here!</a>
-      </div>
-    </section>
-
-    <!-- Servers -->
-    <section class="cards shadow servers" id="servers">
-      <h3>Servers, Channels and Worlds</h3>
-      <div class="content">
-
-      </div>
-    </section>
 
     <!--Characters-->
     <section class="cards shadow characters" id="characters">
-      <h3>Characters</h3>
+      <h3>Construction below this line</h3>
       <div class="content">
         <ul class="lists">
           <li>Characters are separate experiences within the same account.</li>
