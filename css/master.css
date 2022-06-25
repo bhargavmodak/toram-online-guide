@@ -53,6 +53,7 @@ body {
 }
 
 .background-squares {
+  background-image: url('../images/protruding-squares.svg');
   background-attachment: fixed;
 }
 
