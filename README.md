@@ -1,4 +1,4 @@
-# Toram Online Guide
+# 🎮 Toram Online Guide 📖
 
 ## Description
 
@@ -12,3 +12,16 @@ It is a project intended to explore the possibilities of Web Development as I le
 
 - HTML 5
 - CSS 3
+- Jquery 3.6.0
+
+## Project Maintainer 🛠
+
+<div align="center">
+<table>
+    <tbody>
+        <td align="center"><a href="https://github.com/vishal-codes"><img alt="github profile" src="https://avatars.githubusercontent.com/u/82528318?v=4" width="130px;"><br><sub><b> Bhargav Modak </b></sub></a><br><a title="Code"> Web Developer </a><br><a href="https://twitter.com/thebrahmnicboy" target="_blank"><img src="https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white&alt=twitter" /></a></td>  
+    </tbody>
+</table>
+</div>
+
+<br>
