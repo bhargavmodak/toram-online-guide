@@ -265,7 +265,7 @@ ul {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 6px;
   border-top: none;
 }
 
@@ -523,6 +523,8 @@ body::-webkit-scrollbar-thumb:hover {
 /* Create a div for story */
 .story {
   margin: 1rem auto;
+  padding: 2rem;
+  width: 90%;
   background: url(../images/Story_mode_card_img.png);
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/Story_mode_card_img.png), no-repeat;
   /* Allows width to INCLUDE padding */
@@ -542,7 +544,7 @@ body::-webkit-scrollbar-thumb:hover {
   text-decoration: none;
   cursor: pointer;
   /* Give moderate shadow */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
   /* Make font Work sans */
   font-family: "Work Sans", sans-serif;
 }
