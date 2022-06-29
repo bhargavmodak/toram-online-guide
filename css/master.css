@@ -111,6 +111,9 @@ ul {
   padding-left: 0;
 }
 
+img {
+  cursor: pointer;
+}
 
 /* Reusable */
 .shadow {
@@ -195,7 +198,7 @@ ul {
 }
 
 .images {
-  width: 270px;
+  width: 230px;
   height: auto;
 }
 
@@ -221,6 +224,12 @@ ul {
 
   .info-cards {
     width: 100%;
+  }
+
+  .images {
+    display: block;
+    float: none;
+    margin: 1rem auto;
   }
 }
 
