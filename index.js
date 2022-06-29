@@ -7,14 +7,14 @@ if (prefersDarkScheme.matches && currentTheme == "dark") {
   // Change CSS
   $("html").attr('data-theme', 'dark');
   // Change Background
-  $("body").css('background-image', 'url(../images/protruding-squares-dark.svg)');
+  $("body").css('background-image', 'url(images/protruding-squares-dark.svg)');
   // Change toggle icon
   $(".toggle-icon").addClass('fa-sun');
 } else {
   // Change CSS
   $("html").attr('data-theme', 'light');
   // Change Background
-  $("body").css('background-image', 'url(../images/protruding-squares.svg)');
+  $("body").css('background-image', 'url(images/protruding-squares.svg)');
   // Change toggle icon
   $(".toggle-icon").addClass('fa-moon');
 }
@@ -112,11 +112,7 @@ $(".desktop.tablinks").click();
 //   $(".mobile.tablinks").click();
 // }
 
-// Open images to full screen on click
-$(".images-full").click(function () {
-  var imgSrc = $(this).attr("src");
-
-  var imgWindow = window.open("", "Image", "");
-
-  imgWindow.document.write("<img src='" + imgSrc + "'width=100%/>");
+// Open images in new tab when clicked
+$("img").click(function () {
+  window.open($(this).attr('src'));
 });
