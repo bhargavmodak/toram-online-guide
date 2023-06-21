@@ -1,4 +1,4 @@
-# 🎮 Toram Online Guide 📖
+# 🎮 Guide for Toram Online
 
 ## Description
 
